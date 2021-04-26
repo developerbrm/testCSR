@@ -1,0 +1,44 @@
+@import "fonts";
+
+// variables
+
+//header vars
+$header-bg-color: #002559;
+$header-links-color: #fff;
+
+//theme colors
+$primary-normal: #0057a6;
+$secondary-normal: #470063;
+
+$primary-dark: darken(
+  $color: $primary-normal,
+  $amount: 5,
+);
+$primary-light: lighten(
+  $color: $primary-normal,
+  $amount: 5,
+);
+$secondary-dark: darken(
+  $color: $secondary-normal,
+  $amount: 5,
+);
+$secondary-light: lighten(
+  $color: $secondary-normal,
+  $amount: 5,
+);
+
+// arrows
+$arrow-right: url(./icon-arrow-right.png);
+$arrow-left: url(./icon-arrow-left.png);
+
+//links
+$links-color: #fff;
+$links-color--hover: cyan;
+$links-line-color: #0057a6;
+
+//buttons
+$btn-color: #fff;
+$btn-bg-color: #ff8f3f;
+$btn-border-color: none;
+$btn-color--hover: #ff8f3f;
+$btn-bg-color--hover: #eee;

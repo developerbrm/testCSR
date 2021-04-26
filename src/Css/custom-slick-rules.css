@@ -1,0 +1,26 @@
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  display: block;
+  background-position: center;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+}
+
+.slick-prev::before {
+  left: 3rem;
+  position: absolute;
+  background-image: url(../src-assets/arrow-left.png);
+}
+
+.slick-next::before {
+  right: 3rem;
+  position: absolute;
+  background-image: url(../src-assets/arrow-right.png);
+}
