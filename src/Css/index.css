@@ -285,19 +285,64 @@ main {
   padding-inline: 5%;
 }
 
-#home .procedure .heading-grid-container {
-  -ms-grid-rows: auto;
-  -ms-grid-columns: auto 1fr;
-      grid-template: auto/ auto 1fr;
-  gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#home .dark,
+#home .quotes,
+#home .warehouse {
+  padding-inline: 5%;
 }
 
-#home .procedure .heading-grid-container .heading {
-  max-width: 18ch;
-  margin: 0;
+#home .dark .basic-grid-container,
+#home .quotes .basic-grid-container,
+#home .warehouse .basic-grid-container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 2rem;
+}
+
+#home .dark .content-container,
+#home .quotes .content-container,
+#home .warehouse .content-container {
+  max-width: 50ch;
+}
+
+#home .dark .content-container .sub-text,
+#home .quotes .content-container .sub-text,
+#home .warehouse .content-container .sub-text {
+  color: #21bed5;
+}
+
+#home .dark .content-container ul,
+#home .quotes .content-container ul,
+#home .warehouse .content-container ul {
+  padding-left: 1rem;
+}
+
+#home .dark .content-container ul li,
+#home .quotes .content-container ul li,
+#home .warehouse .content-container ul li {
+  list-style: disc;
+}
+
+#home .dark .content-container ul li::marker,
+#home .quotes .content-container ul li::marker,
+#home .warehouse .content-container ul li::marker {
+  color: gold;
+}
+
+#home .stats {
+  padding: 2rem;
+  background-color: #002862;
+  color: #fff;
+}
+
+#home .stats .heading {
+  color: inherit;
+}
+
+#home .animated-logos-tape {
+  background-color: #fff;
+  padding: 2rem 0;
 }
 
 footer {

@@ -73,7 +73,7 @@
 }
 
 .heading {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Rounded", sans-serif;
 }
 
 .bottom-line {
@@ -161,6 +161,11 @@ a {
 
 address {
   font-style: normal;
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 1rem;
 }
 
 a,
@@ -271,7 +276,7 @@ a:focus::after, a:hover::after, a:active::after,
 .page-width {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding-inline: 5%;
 }
 
 .responsive-txt {
@@ -585,4 +590,27 @@ a:focus::after, a:hover::after, a:active::after,
   background: -webkit-gradient(linear, right top, left top, color-stop(50%, #21bed5), color-stop(74.12%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#4069a3), to(#3c76ab));
   background: linear-gradient(270deg, #21bed5 50%, rgba(255, 255, 255, 0) 74.12%), linear-gradient(180deg, #4069a3 0%, #3c76ab 100%);
   border-radius: 15px;
+}
+
+.gradient-line-classic {
+  width: 100%;
+  height: 1rem;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #21bed5), color-stop(74.12%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#4069a3), to(#3c76ab));
+  background: linear-gradient(270deg, #21bed5 50%, rgba(255, 255, 255, 0) 74.12%), linear-gradient(180deg, #4069a3 0%, #3c76ab 100%);
+}
+
+.heading-with-line-grid-container {
+  -ms-grid-rows: auto;
+  -ms-grid-columns: auto 1fr;
+      grid-template: auto/ auto 1fr;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading-with-line-grid-container .heading {
+  max-width: 18ch;
+  margin: 0;
+  padding: 0;
 }

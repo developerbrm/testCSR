@@ -126,7 +126,7 @@ header {
       padding: 0;
       margin: 0;
       min-height: 100vh;
-      grid-template: repeat(3, max-content)/1fr;
+      grid-template: repeat(3, max-content) / 1fr;
       text-align: center;
       place-content: center;
 
@@ -228,17 +228,52 @@ main {
 
   .procedure {
     padding-inline: 5%;
-    .heading-grid-container {
-      grid-template: auto/ auto 1fr;
-      gap: 1rem;
-      // justify-content: center;
-      align-items: center;
+  }
 
-      .heading {
-        max-width: 18ch;
-        margin: 0;
+  .dark,
+  .quotes,
+  .warehouse {
+    padding-inline: 5%;
+
+    .basic-grid-container {
+      align-items: stretch;
+      gap: 2rem;
+    }
+
+    .content-container {
+      max-width: 50ch;
+
+      .sub-text {
+        color: #21bed5;
+      }
+
+      ul {
+        padding-left: 1rem;
+
+        li {
+          list-style: disc;
+
+          &::marker {
+            color: gold;
+          }
+        }
       }
     }
+  }
+
+  .stats {
+    padding: 2rem;
+    background-color: #002862;
+    color: #fff;
+
+    .heading {
+      color: inherit;
+    }
+  }
+
+  .animated-logos-tape {
+    background-color: #fff;
+    padding: 2rem 0;
   }
 }
 
