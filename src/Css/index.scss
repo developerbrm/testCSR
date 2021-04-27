@@ -123,12 +123,12 @@ header {
     transition: 0.3s ease;
 
     nav {
-      flex-direction: column;
       padding: 0;
       margin: 0;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      grid-template: repeat(3, max-content)/1fr;
+      text-align: center;
+      place-content: center;
 
       ul {
         padding: 1rem 0;
@@ -147,6 +147,10 @@ header {
           }
         }
       }
+    }
+
+    .customers-group {
+      justify-content: center !important;
     }
   }
 
@@ -241,19 +245,75 @@ main {
 footer {
   background-color: $header-bg-color;
   padding: 1rem 0;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
 
   .links-container {
     padding-block: clamp(1rem, 5vw, 2rem);
-    grid-template: 1fr / repeat(auto-fit, minmax(5rem, 1fr));
-    max-width: 800px;
+    grid-template: 1fr / repeat(auto-fit, minmax(15rem, 1fr));
+    padding-inline: 10%;
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
-  }
+    text-align: left;
 
-  .social-icons-container {
-    padding: clamp(1rem, 5vw, 2rem);
+    .address-area {
+      address {
+        max-width: 45ch;
+      }
+
+      .icon-link {
+        display: flex;
+        gap: 1rem;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 0.5rem;
+
+        .icon {
+          img {
+            width: 1.5rem;
+          }
+        }
+      }
+    }
   }
 
   .mail-container {
     padding: 0.5rem 0;
+  }
+
+  .gradient-line {
+    border-radius: 0;
+    height: 3px;
+  }
+
+  .footer-links-column {
+    ul {
+      padding: 0;
+
+      h3 {
+        padding-bottom: 2rem;
+        margin: 0;
+      }
+
+      li {
+        font-family: "Montserrat";
+        font-weight: lighter;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .social-icons-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+
+    .social-link-item {
+      img {
+        max-height: 1.5rem;
+      }
+    }
   }
 }
