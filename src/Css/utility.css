@@ -224,7 +224,7 @@ a:focus::after, a:hover::after, a:active::after,
   transition: 0.5s ease;
   border-radius: 100px;
   outline: none;
-  border: none 1px solid;
+  border: transparent 1px solid;
   color: #fff;
   background: #ff8f3f;
   -webkit-box-sizing: border-box;
