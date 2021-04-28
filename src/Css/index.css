@@ -330,19 +330,137 @@ main {
   color: gold;
 }
 
-#home .stats {
+#home .animated-logos-tape {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+#contact .hero {
+  padding: 3rem 2rem;
+}
+
+#contact .hero .contact-grid-container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: auto auto;
+      grid-template: 1fr / auto auto;
+}
+
+#contact .hero .contact-grid-container .form-container form {
+  padding-inline: 5%;
+}
+
+#contact .hero .contact-grid-container .form-container form .form-item [data-required="true"] > span {
+  display: inline-block;
+}
+
+#contact .hero .contact-grid-container .form-container form .form-item [data-required="true"] > span::after {
+  content: "*";
+  color: red;
+  padding-left: 0.1rem;
+}
+
+#contact .hero .contact-grid-container .form-container form .form-item input,
+#contact .hero .contact-grid-container .form-container form .form-item textarea,
+#contact .hero .contact-grid-container .form-container form .form-item select {
+  margin-top: 0.5rem;
+}
+
+#contact .hero .contact-grid-container .form-container form .split-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .hero .contact-grid-container .display-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#contact .hero .contact-grid-container .display-img .img-container {
+  height: 100%;
+}
+
+@media (max-width: 750px) {
+  #contact .hero .contact-grid-container {
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template: auto auto / 1fr;
+  }
+}
+
+#contact .testimonial,
+#contact .partner-area {
+  padding-inline: 5%;
+}
+
+#contact .testimonial .content-container,
+#contact .partner-area .content-container {
+  max-width: 40ch;
+}
+
+#contact .testimonial .content-container .rte,
+#contact .partner-area .content-container .rte {
+  margin: 0 auto;
+}
+
+#contact .testimonial .content-container {
+  max-width: 40ch;
+  margin: 0 auto;
+}
+
+#contact .testimonial .content-container p {
+  position: relative;
+}
+
+#contact .testimonial .content-container p::after, #contact .testimonial .content-container p::before {
+  position: absolute;
+  content: "";
+  background: url(../src-assets/icon-quotes.png) no-repeat;
+  display: inline-block;
+  background-size: contain;
+  width: clamp(3rem, 10vw, 5rem);
+  height: clamp(3rem, 10vw, 5rem);
+  margin-inline: 1rem;
+}
+
+#contact .testimonial .content-container p::before {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
+}
+
+#contact .testimonial .content-container p::after {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg) translate(-100%, -100%);
+          transform: rotate(180deg) translate(-100%, -100%);
+}
+
+@media (max-width: 750px) {
+  #contact .testimonial .content-container p {
+    margin: 4rem 5% !important;
+  }
+}
+
+.stats {
   padding: 2rem;
   background-color: #002862;
   color: #fff;
 }
 
-#home .stats .heading {
+.stats .heading {
   color: inherit;
-}
-
-#home .animated-logos-tape {
-  background-color: #fff;
-  padding: 2rem 0;
 }
 
 footer {

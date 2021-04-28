@@ -261,19 +261,130 @@ main {
     }
   }
 
-  .stats {
-    padding: 2rem;
-    background-color: #002862;
-    color: #fff;
-
-    .heading {
-      color: inherit;
-    }
-  }
-
   .animated-logos-tape {
     background-color: #fff;
     padding: 2rem 0;
+  }
+}
+
+// page contact
+#contact {
+  .hero {
+    padding: 3rem 2rem;
+
+    .contact-grid-container {
+      align-items: stretch;
+      grid-template: 1fr / auto auto;
+
+      .form-container {
+        form {
+          padding-inline: 5%;
+
+          .form-item {
+            [data-required="true"] > span {
+              display: inline-block;
+
+              &::after {
+                content: "*";
+                color: red;
+                padding-left: 0.1rem;
+              }
+            }
+
+            input,
+            textarea,
+            select {
+              margin-top: 0.5rem;
+            }
+          }
+
+          .split-half {
+            display: flex;
+            gap: 1rem;
+            align-items: stretch;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .display-img {
+        border-radius: 10px;
+        overflow: hidden;
+
+        .img-container {
+          height: 100%;
+        }
+      }
+
+      // mobile rules
+      @media (max-width: 750px) {
+        grid-template: auto auto / 1fr;
+      }
+    }
+  }
+
+  .testimonial,
+  .partner-area {
+    padding-inline: 5%;
+
+    .content-container {
+      max-width: 40ch;
+
+      .rte {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .testimonial {
+    .content-container {
+      max-width: 40ch;
+      margin: 0 auto;
+
+      p {
+        position: relative;
+
+        &::after,
+        &::before {
+          position: absolute;
+          content: "";
+          background: url(../src-assets/icon-quotes.png) no-repeat;
+          display: inline-block;
+          background-size: contain;
+          width: clamp(3rem, 10vw, 5rem);
+          height: clamp(3rem, 10vw, 5rem);
+          margin-inline: 1rem;
+        }
+
+        &::before {
+          top: 0;
+          left: 0;
+          transform: translate(-100%, -100%);
+        }
+
+        &::after {
+          bottom: 0;
+          right: 0;
+          transform: rotate(180deg) translate(-100%, -100%);
+        }
+
+        // mobile ruels
+        @media (max-width: 750px) {
+          margin: 4rem 5% !important;
+        }
+      }
+    }
+  }
+}
+
+// status comp
+.stats {
+  padding: 2rem;
+  background-color: #002862;
+  color: #fff;
+
+  .heading {
+    color: inherit;
   }
 }
 

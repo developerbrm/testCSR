@@ -2,6 +2,7 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import HeadingWithLine from "../Utilities/mini-comps/HeadingWithLine";
 import ResponsiveDisplayImg from "../Utilities/mini-comps/ResponsiveDisplayImg";
+import Stats from "../Utilities/mini-comps/Stats";
 
 const Home = () => {
   return (
@@ -218,15 +219,7 @@ const Home = () => {
       </section>
 
       {/* stats    */}
-      <section className="stats">
-        <HeadingWithLine data={{ heading: "Your Business is in safe hands" }} />
-
-        <ResponsiveDisplayImg
-          data={{
-            img: "/assets/pages/home/stats.png",
-          }}
-        />
-      </section>
+      <Stats />
 
       {/* animated tape  */}
       <section className="animated-logos-tape">

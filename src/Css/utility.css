@@ -402,17 +402,17 @@ a:focus::after, a:hover::after, a:active::after,
 
 .form-container form .form-item {
   width: 100%;
-  margin-bottom: 2rem;
 }
 
 .form-container form .form-item input,
-.form-container form .form-item textarea {
+.form-container form .form-item textarea,
+.form-container form .form-item select {
   width: 100%;
   max-width: 100%;
   border: none;
-  background: none;
-  color: #fff;
-  border-bottom: 2px solid #0064c0;
+  border-radius: 10px;
+  background: #eee;
+  color: #000;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   -webkit-transition: 0.3s ease;
@@ -422,29 +422,39 @@ a:focus::after, a:hover::after, a:active::after,
 }
 
 .form-container form .form-item input::-webkit-input-placeholder,
-.form-container form .form-item textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
+.form-container form .form-item textarea::-webkit-input-placeholder,
+.form-container form .form-item select::-webkit-input-placeholder {
+  color: #aaa;
 }
 
 .form-container form .form-item input:-ms-input-placeholder,
-.form-container form .form-item textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
+.form-container form .form-item textarea:-ms-input-placeholder,
+.form-container form .form-item select:-ms-input-placeholder {
+  color: #aaa;
 }
 
 .form-container form .form-item input::-ms-input-placeholder,
-.form-container form .form-item textarea::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
+.form-container form .form-item textarea::-ms-input-placeholder,
+.form-container form .form-item select::-ms-input-placeholder {
+  color: #aaa;
 }
 
 .form-container form .form-item input::placeholder,
-.form-container form .form-item textarea::placeholder {
-  color: rgba(255, 255, 255, 0.8);
+.form-container form .form-item textarea::placeholder,
+.form-container form .form-item select::placeholder {
+  color: #aaa;
 }
 
 .form-container form .form-item input:focus, .form-container form .form-item input:active,
 .form-container form .form-item textarea:focus,
-.form-container form .form-item textarea:active {
+.form-container form .form-item textarea:active,
+.form-container form .form-item select:focus,
+.form-container form .form-item select:active {
   border-color: #35004a;
+}
+
+.form-container form .form-item:not(.form-submit) {
+  margin-bottom: 2rem;
 }
 
 .form-has-error {
