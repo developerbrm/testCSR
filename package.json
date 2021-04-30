@@ -12,6 +12,7 @@
     "react-router-hash-link": "^2.4.0",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
+    "react-use-intercom": "^1.1.9",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.1"
   },

@@ -540,3 +540,34 @@ a,
     padding: 0;
   }
 }
+
+.width-40ch {
+  max-width: 40ch;
+}
+
+.width-45ch {
+  max-width: 45ch;
+}
+
+.width-50ch {
+  max-width: 50ch;
+}
+
+.text-with-line {
+  &::after {
+    content: "";
+    margin: 1rem 0;
+    display: block;
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: auto;
+    border-radius: 15px;
+    height: .5rem;
+    background: linear-gradient(
+        270deg,
+        #21bed5 50%,
+        rgba(255, 255, 255, 0) 74.12%
+      ),
+      linear-gradient(180deg, #4069a3 0%, #3c76ab 100%);
+  }
+}

@@ -11,8 +11,10 @@ const Home = () => {
       <section className="hero">
         <div className="basic-grid-container page-width">
           <div className="grid-item grid-item-1">
-            <div className="img-container">
-              <img src="/assets/pages/home/hero-grid-1.png" alt="text image" />
+            <div className="content-container width-40ch">
+              <h2 className="primary-color primary-font heading text-with-line">
+                On Demand Warehousing and Fulfillment solution{" "}
+              </h2>
             </div>
           </div>
           <div className="grid-item grid-item-2">

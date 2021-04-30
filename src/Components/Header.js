@@ -2,10 +2,12 @@ import React, { useRef, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import HamIcon from "./Utilities/mini-comps/HamIcon";
 
-export const Header = () => {
+const Header = () => {
   const headerRef = useRef(null);
 
   const handleHamClick = (e) => {
+    if (!e) return;
+
     const target = e.target.closest(".ham-menu svg");
 
     if (headerRef.current.classList.contains("hide")) {
@@ -20,6 +22,8 @@ export const Header = () => {
   };
 
   const handleLinkClick = () => {
+    handleHamClick();
+
     if (window.innerWidth <= 650) {
       headerRef.current.classList.add("hide");
     }
@@ -52,21 +56,17 @@ export const Header = () => {
           <div className="nav-links-group">
             <ul className="main-links-container">
               <li>
-                <Link
-                  onClick={handleLinkClick}
-                  className="main-link"
-                  to="/about"
-                >
-                  About
+                <Link onClick={handleLinkClick} className="main-link" to="/why">
+                  Why US ?
                 </Link>
               </li>
               <li>
                 <Link
                   onClick={handleLinkClick}
                   className="main-link"
-                  to="/pricing"
+                  to="/product"
                 >
-                  Pricing
+                  Product
                 </Link>
               </li>
               <li>
@@ -76,6 +76,24 @@ export const Header = () => {
                   to="/integrations"
                 >
                   Integrations
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={handleLinkClick}
+                  className="main-link"
+                  to="/resources"
+                >
+                  Resources
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={handleLinkClick}
+                  className="main-link"
+                  to="/contact"
+                >
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -104,3 +122,5 @@ export const Header = () => {
     </>
   );
 };
+
+export default Header;

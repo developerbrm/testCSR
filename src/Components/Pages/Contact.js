@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ContactForm from "../forms/ContactForm";
 import HeadingWithLine from "../Utilities/mini-comps/HeadingWithLine";
 import ResponsiveDisplayImg from "../Utilities/mini-comps/ResponsiveDisplayImg";
+import SectionImgContentGrid from "../Utilities/mini-comps/SectionImgContentGrid";
 import Stats from "../Utilities/mini-comps/Stats";
 export const ContactFormContext = React.createContext();
 
@@ -128,32 +129,17 @@ const Contact = () => {
       <br />
 
       {/* partner */}
-      <section className="partner-area">
-        <div className="basic-grid-container">
-          <div className="content-container">
-            <h2 className="heading primary-color primary-font">
-              Choose the Right 3PL Partner
-            </h2>
-
-            <p className="rte">
-              Download the free guide today and get a jump start on your 3PL
-              Service Provider.
-            </p>
-
-            <br />
-            <br />
-            <Link to="/download" className="btn">
-              Download
-            </Link>
-          </div>
-
-          <ResponsiveDisplayImg
-            data={{
-              img: "/assets/pages/contact/partner.png",
-            }}
-          />
-        </div>
-      </section>
+      <SectionImgContentGrid
+        data={{
+          sectionClassName: "partner-area page-width",
+          heading: "Choose the Right 3PL Partner",
+          text:
+            " Download the free guide today and get a jump start on your 3PL Service Provider.",
+          urlTo: "/download",
+          urlText: "Download",
+          img: "/assets/pages/contact/partner.png",
+        }}
+      />
     </div>
   );
 };

@@ -1,12 +1,14 @@
 import React from "react";
 import "../../../Css/ham.css";
 
-function HamIcon({handleHamClick}) {
-
-
+function HamIcon({ handleHamClick }) {
   return (
     <div className="ham-icon-container">
-      <button className="ham-menu" onClick={handleHamClick} aria-label="Main Menu">
+      <button
+        className="ham-menu"
+        onClick={handleHamClick}
+        aria-label="Main Menu"
+      >
         <svg width="100" height="100" viewBox="0 0 100 100">
           <path
             className="line line1"

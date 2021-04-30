@@ -1,5 +1,7 @@
 @import "./variables";
 
+$mob-nav-breakpoint: 900px;
+
 // fixed-mob-logo
 .fixed-mob-logo {
   position: fixed;
@@ -8,7 +10,7 @@
   left: 1rem;
   z-index: 1000;
 
-  @media (max-width: 750px) {
+  @media (max-width: $mob-nav-breakpoint) {
     display: block;
   }
 }
@@ -16,7 +18,8 @@
 .logo-container {
   img {
     max-height: 5rem;
-    width: 13rem;
+    min-width: 10rem;
+    width: 10rem;
   }
 }
 
@@ -46,6 +49,7 @@ header {
         gap: 3rem;
         align-content: center;
         justify-content: center;
+        padding: 0;
 
         .menu-container {
           display: inline;
@@ -55,6 +59,10 @@ header {
           img {
             min-width: 2rem;
           }
+        }
+
+        .main-link {
+          width: max-content;
         }
       }
     }
@@ -109,10 +117,14 @@ header {
         }
       }
     }
+
+    img {
+      min-width: 1rem;
+    }
   }
 
   // mobile rules
-  @media (max-width: 750px) {
+  @media (max-width: $mob-nav-breakpoint) {
     position: fixed;
     padding-top: 0;
     margin: 0;
@@ -129,6 +141,14 @@ header {
       grid-template: repeat(3, max-content) / 1fr;
       text-align: center;
       place-content: center;
+      justify-content: center;
+      gap: 1rem;
+
+      .logo-container {
+        img {
+          margin: 0 auto;
+        }
+      }
 
       ul {
         padding: 1rem 0;
@@ -374,6 +394,98 @@ main {
         }
       }
     }
+  }
+}
+
+// page product
+#product {
+  .hero,
+  .inventory,
+  .inventory-dashboard,
+  .report,
+  .dispatch,
+  .returns,
+  .warehouse {
+    padding-inline: 5%;
+
+    .basic-grid-container {
+      align-items: stretch;
+    }
+  }
+
+  .hero {
+    padding: 3rem 5%;
+  }
+
+  .steps {
+    padding: 5rem 5%;
+    background-color: #002862;
+    background: linear-gradient(180deg, #00214f, #023d94);
+    color: #fff;
+
+    .main-heading {
+      text-align: center;
+    }
+
+    .step {
+      $grid-height: 35rem;
+      display: grid;
+      grid-template: #{$grid-height}/ 1fr 1fr;
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      &::before {
+        content: "";
+        background-color: #2658a3;
+        position: absolute;
+        left: 0;
+        height: calc(#{$grid-height} + 1rem);
+        width: 0.5rem;
+        border-radius: 5px;
+        z-index: 0;
+      }
+
+      .txt-container {
+        padding-left: 2rem;
+        max-width: 40ch;
+        height: max-content;
+        position: sticky;
+        top: 50%;
+
+        &::after {
+          content: "";
+          background-color: gold;
+          border: 5px solid #fff;
+          position: absolute;
+          left: calc(-1rem / 2);
+          top: 50%;
+          transform: translate(0, -50%);
+          width: 1.5rem;
+          height: 1.5rem;
+          z-index: 2;
+          border-radius: 100%;
+        }
+      }
+
+      .img-container {
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+
+    // .step-1{
+    //   top: 33%;
+    // }
+
+    // .step-2{
+    //   top: 66%;
+    // }
+
+    // .step-3{
+    //   top: 99%;
+    // }
   }
 }
 
