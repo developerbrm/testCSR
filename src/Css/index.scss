@@ -431,7 +431,6 @@ main {
       $grid-height: 35rem;
       display: grid;
       justify-content: center;
-      align-items: center;
       gap: 2rem;
       grid-template: #{$grid-height}/ 1fr 1fr;
       position: relative;
@@ -452,7 +451,7 @@ main {
       .txt-container {
         padding-left: 2rem;
         max-width: 40ch;
-        // height: max-content;
+        height: max-content;
         position: sticky;
         top: 50%;
 
@@ -471,9 +470,13 @@ main {
         }
       }
 
-      .img-container {
-        img {
-          object-fit: contain;
+      .display-img {
+        align-self: center;
+
+        .img-container {
+          img {
+            object-fit: contain;
+          }
         }
       }
     }
