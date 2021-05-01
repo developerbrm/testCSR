@@ -4,7 +4,7 @@ const HeadingWithLine = ({ data }) => {
   return (
     <div className="basic-grid-container heading-with-line-grid-container">
       <div className="heading-container">
-        <h2 className="primary-color heading secondary-font">{data.heading}</h2>
+        <h2 className="primary-color heading primary-font">{data.heading}</h2>
       </div>
 
       <div className="line-container">

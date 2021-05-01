@@ -6,7 +6,8 @@ const Stats = () => {
   return (
     <section className="stats">
       <HeadingWithLine data={{ heading: "Your Business is in safe hands" }} />
-
+      <br />
+      <br />
       <ResponsiveDisplayImg
         data={{
           img: "/assets/pages/home/stats.png",

@@ -133,7 +133,7 @@ body {
 }
 
 section:not(section:first-of-type) {
-  padding: clamp(1rem, 5vw, 3rem) 0;
+  padding: clamp(2rem, 10vw, 4rem) 0;
 }
 
 img,
@@ -229,7 +229,7 @@ a:focus::after, a:hover::after, a:active::after,
   background: #ff8f3f;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -453,6 +453,50 @@ a:focus::after, a:hover::after, a:active::after,
   border-color: #35004a;
 }
 
+.form-container form .form-item textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form-container form .form-item .label-radio,
+.form-container form .form-item .label-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 0.5rem;
+  padding-right: 0;
+}
+
+.form-container form .form-item .label-radio input,
+.form-container form .form-item .label-checkbox input {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 1rem;
+}
+
+.form-container form .form-item .label-radio:first-of-type,
+.form-container form .form-item .label-checkbox:first-of-type {
+  margin-top: 1rem;
+}
+
+.form-container form .form-item .label-checkbox {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container form .form-item .label-checkbox input {
+  margin: 0 !important;
+  margin-right: 1rem !important;
+}
+
 .form-container form .form-item:not(.form-submit) {
   margin-bottom: 2rem;
 }
@@ -645,7 +689,7 @@ a:focus::after, a:hover::after, a:active::after,
   margin-top: 3rem;
   margin-left: auto;
   border-radius: 15px;
-  height: .5rem;
+  height: 0.5rem;
   background: -webkit-gradient(linear, right top, left top, color-stop(50%, #21bed5), color-stop(74.12%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#4069a3), to(#3c76ab));
   background: linear-gradient(270deg, #21bed5 50%, rgba(255, 255, 255, 0) 74.12%), linear-gradient(180deg, #4069a3 0%, #3c76ab 100%);
 }

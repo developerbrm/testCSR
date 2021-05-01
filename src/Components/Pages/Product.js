@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ResponsiveDisplayImg from "../Utilities/mini-comps/ResponsiveDisplayImg";
 import SectionImgContentGrid from "../Utilities/mini-comps/SectionImgContentGrid";
 
@@ -14,7 +13,7 @@ const Product = () => {
           heading: "Reforming you Warehouse Management with Digitalization",
           text:
             "To have an upper hand in the era of new innovative technologies, we need to undergo a digital transformation. We at STORE ZIPPY believe in warehouse automation opportunities to add value to your business. Meeting higher client’s expectations calls for the real time inventory management and hence we keep you updated with a live dashboard ensuring you know exactly about everything related to your account.",
-          urlTo: "/contact",
+          urlTo: "/quotes",
           urlText: "Get Quotes",
           img: "/assets/pages/product/hero.png",
         }}
@@ -23,7 +22,7 @@ const Product = () => {
       {/* steps */}
       <section className="steps">
         <h2 className="main-heading primary-font">
-          Streamling your Fulfillment Needs!
+          Streamlining your Fulfillment Needs!
         </h2>
         <div className="step step-1">
           <div className="txt-container">
@@ -81,6 +80,8 @@ const Product = () => {
         </div>
       </section>
 
+      <br />
+      <br />
       <div className="basic-grid-container page-width">
         <div className="content-container width-45ch">
           <h2 className="primary-color primary-font heading text-with-line">
@@ -96,12 +97,13 @@ const Product = () => {
           />
         </div>
       </div>
-
+      <br />
+      <br />
       {/* inventory management */}
       <SectionImgContentGrid
         data={{
           sectionClassName: "inventory page-width",
-          subHeading: "Inbound Inventory Management",
+          heading: "Inbound Inventory Management",
           text:
             "Once you ship your inventory to our warehouse centre, we perform thorough quality checks, count the inbound stock and report discrepancies, if any, to you without any delays.",
           img: "/assets/pages/product/inventory.png",
@@ -114,7 +116,7 @@ const Product = () => {
       <SectionImgContentGrid
         data={{
           sectionClassName: "inventory-dashboard page-width",
-          subHeading: "Inventory Storage Management",
+          heading: "Inventory Storage Management",
           text:
             "After checking the stock, we add it to our system and allocate an appropriate location in the warehouse. The scalability of STORE ZIPPY’s system makes us suitable for a large number of businesses.",
           img: "/assets/pages/product/inventory-dashboard.png",
@@ -127,7 +129,7 @@ const Product = () => {
       <SectionImgContentGrid
         data={{
           sectionClassName: "report page-width",
-          subHeading: "Reporting",
+          heading: "Reporting",
           text:
             "To manage your stock within our warehouse, our system outputs a standard suite of reports. These reports are shared with you so that you have a clear visibility into the operations and performance.",
           img: "/assets/pages/product/report.png",
@@ -140,7 +142,7 @@ const Product = () => {
       <SectionImgContentGrid
         data={{
           sectionClassName: "dispatch page-width",
-          subHeading: "One Day Dispatch",
+          heading: "One Day Dispatch",
           text:
             "STORE ZIPPY prioritizes your business need of getting things where they need to be as quickly as possible. That’s why we offer a same day delivery service for the orders placed before 10am. What’s more? You will be able to track the progress online via our live dashboard.",
           img: "/assets/pages/product/dispatch.png",
@@ -152,7 +154,7 @@ const Product = () => {
       <SectionImgContentGrid
         data={{
           sectionClassName: "returns page-width",
-          subHeading: "Returns Management",
+          heading: "Returns Management",
           text:
             "Management of returns is an important part of what STORE ZIPPY does. First and foremost, we do a thorough check of the returned stock. After the check, as per your guidelines, we will either return the items back to the stock or arrange it to be returned to you. ",
           img: "/assets/pages/product/returns.png",
@@ -165,10 +167,10 @@ const Product = () => {
       <SectionImgContentGrid
         data={{
           sectionClassName: "warehouse page-width",
-          subHeading: "Your On Demand Digital Warehouse Partner",
+          heading: "Your On Demand Digital Warehouse Partner",
           text:
             "Download the free guide today and get a jump start on your 3PL Service Provider.",
-          img: "/assets/pages/product/warehouse.png",
+          img: "/assets/pages/product/warehouse.jpg",
           urlTo: "/download",
           urlText: "Download",
           imgRight: true,

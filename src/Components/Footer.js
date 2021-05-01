@@ -43,8 +43,8 @@ const Footer = () => {
           <br />
           <div className="rte">
             <address>
-              B-203, Pragjyotishpur Appartments, Plot-7, Sector 10 Dwarka, New
-              Delhi -110075
+              B68/2-B, 3rd Floor, Nariana Industrial Area Phase-2, New Delhi,
+              Delhi 110028
             </address>
           </div>
           <br />
@@ -56,14 +56,14 @@ const Footer = () => {
               <a href="mailto:hello@storezippy.com">hello@storezippy.com</a>
             </div>
           </div>
-          <div className="icon-link">
+          {/* <div className="icon-link">
             <div className="icon">
               <img src="/assets/icon-phone.png" alt="phone icon" />
             </div>
             <div className="link">
               <a href="tel:7838812153">7838812153</a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid-item">

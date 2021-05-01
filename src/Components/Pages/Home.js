@@ -48,7 +48,7 @@ const Home = () => {
                 <br />
               </p>
 
-              <Link className="btn" to="/contact">
+              <Link className="btn" to="/quotes">
                 Get Quotes
               </Link>
             </div>
@@ -74,11 +74,11 @@ const Home = () => {
       {/* video area  */}
       <section className="video-area">
         <div className="basic-grid-container">
-          <div className="grid-item">
-            <div className="video-container">
-              <video src="" alt="video" />
-            </div>
-          </div>
+          <ResponsiveDisplayImg
+            data={{
+              img: "assets/pages/home/video.jpg",
+            }}
+          />
           <div className="grid-item">
             <div className="txt-container">
               <h2 className="primary-font heading">
@@ -128,6 +128,10 @@ const Home = () => {
           </div>
         </div>
 
+        <br />
+        <br />
+        <br />
+
         <div className="basic-grid-container">
           <div className="content-container">
             <h2 className="heading primary-color primary-font">
@@ -158,6 +162,7 @@ const Home = () => {
         </div>
       </section>
 
+      <br />
       {/* display img */}
       <div className="displayImg-container page-width">
         <ResponsiveDisplayImg
@@ -171,6 +176,9 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
 
       {/* warehouse  */}
       <section className="warehouse page-width">
@@ -207,7 +215,7 @@ const Home = () => {
               pick your orders and schedule shipments for your customers.
             </p>
 
-            <Link className="btn" to="/contact">
+            <Link className="btn" to="/quotes">
               Get Quotes
             </Link>
           </div>
@@ -253,7 +261,7 @@ const Home = () => {
               <span style={{ color: "#FF8F3F" }}>Try Us!</span>
             </h2>
 
-            <Link className="btn" to="/contact">
+            <Link className="btn" to="/quotes">
               Get Quotes
             </Link>
           </div>

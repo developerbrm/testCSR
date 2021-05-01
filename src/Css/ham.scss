@@ -5,6 +5,16 @@
   z-index: 2001;
   display: block;
 
+  img {
+    max-width: 2rem;
+    transition: 0.3s ease;
+
+    &:hover,
+    &:focus {
+      filter: invert(1);
+    }
+  }
+
   @media (min-width: 900px) {
     display: none;
   }
@@ -14,7 +24,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  display: flex;
+  // display: flex;
   padding: 0;
 
   svg {

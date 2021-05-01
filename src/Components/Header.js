@@ -11,12 +11,12 @@ const Header = () => {
     const target = e.target.closest(".ham-menu svg");
 
     if (headerRef.current.classList.contains("hide")) {
-      target.classList.add("opened");
-      target.setAttribute("aria-expanded", target.classList.contains("opened"));
+      // target.classList.add("opened");
+      // target.setAttribute("aria-expanded", target.classList.contains("opened"));
       headerRef.current.classList.toggle("hide");
     } else {
-      target.classList.remove("opened");
-      target.setAttribute("aria-expanded", target.classList.contains("opened"));
+      // target.classList.remove("opened");
+      // target.setAttribute("aria-expanded", target.classList.contains("opened"));
       headerRef.current.classList.toggle("hide");
     }
   };
