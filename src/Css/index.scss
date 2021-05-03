@@ -727,11 +727,11 @@ footer {
   background-color: $header-bg-color;
   padding: 1rem 0;
   color: #fff;
-  font-family: Helvetica, sans-serif;
+  font-family: "Montserrat";
 
   .links-container {
     padding-block: clamp(1rem, 5vw, 2rem);
-    grid-template: 1fr / repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template: 1fr / repeat(auto-fit, minmax(17rem, 1fr));
     padding-inline: 5%;
     gap: 2rem;
     max-width: 1400px;
@@ -741,7 +741,6 @@ footer {
     .address-area {
       address {
         max-width: 45ch;
-        font-family: "Montserrat";
       }
 
       .icon-link {
@@ -754,7 +753,13 @@ footer {
         .icon {
           img {
             width: 1.5rem;
+            height: 1.5rem;
+            object-fit: contain;
           }
+        }
+
+        .link {
+          word-wrap: anywhere;
         }
       }
     }
@@ -794,8 +799,8 @@ footer {
 
     .social-link-item {
       img {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 2.2rem;
+        width: 2.2rem;
       }
     }
   }

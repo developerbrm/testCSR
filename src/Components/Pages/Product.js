@@ -15,7 +15,7 @@ const Product = () => {
       <SectionImgContentGrid
         data={{
           sectionClassName: "hero page-width",
-          heading: "Reforming you Warehouse Management with Digitalization",
+          heading: "Reforming your Warehouse Management with Digitalization",
           text:
             "To have an upper hand in the era of new innovative technologies, we need to undergo a digital transformation. We at STORE ZIPPY believe in warehouse automation opportunities to add value to your business. Meeting higher client’s expectations calls for the real time inventory management and hence we keep you updated with a live dashboard ensuring you know exactly about everything related to your account.",
           urlTo: "/quotes",

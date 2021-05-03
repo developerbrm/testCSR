@@ -806,14 +806,14 @@ footer {
   background-color: #002559;
   padding: 1rem 0;
   color: #fff;
-  font-family: Helvetica, sans-serif;
+  font-family: "Montserrat";
 }
 
 footer .links-container {
   padding-block: clamp(1rem, 5vw, 2rem);
   -ms-grid-rows: 1fr;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template: 1fr/repeat(auto-fit, minmax(15rem, 1fr));
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fit];
+      grid-template: 1fr/repeat(auto-fit, minmax(17rem, 1fr));
   padding-inline: 5%;
   gap: 2rem;
   max-width: 1400px;
@@ -823,7 +823,6 @@ footer .links-container {
 
 footer .links-container .address-area address {
   max-width: 45ch;
-  font-family: "Montserrat";
 }
 
 footer .links-container .address-area .icon-link {
@@ -842,6 +841,13 @@ footer .links-container .address-area .icon-link {
 
 footer .links-container .address-area .icon-link .icon img {
   width: 1.5rem;
+  height: 1.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer .links-container .address-area .icon-link .link {
+  word-wrap: anywhere;
 }
 
 footer .mail-container {
@@ -882,6 +888,6 @@ footer .social-icons-container {
 }
 
 footer .social-icons-container .social-link-item img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2.2rem;
+  width: 2.2rem;
 }
