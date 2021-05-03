@@ -74,11 +74,12 @@ header {
       gap: 1rem;
 
       .icon {
-        max-width: 1rem;
+        width: 1.5rem;
       }
 
       .btn {
         border-radius: 100px;
+        font-size: 1rem;
       }
     }
 
@@ -210,7 +211,14 @@ main {
 
         img {
           object-fit: contain;
+          max-height: 40rem;
         }
+      }
+    }
+
+    .content-container {
+      .heading {
+        font-size: clamp(1.5rem, 6vw, 3.5rem);
       }
     }
   }
@@ -295,9 +303,31 @@ main {
     }
   }
 
-  .animated-logos-tape {
+  .animated-logos-stripe {
     background-color: #fff;
-    padding: 2rem 0;
+    padding: 3rem 0;
+
+    .display-img {
+      padding: 2rem 0;
+
+        .img-container {
+        picture {
+          display: block;
+          position: relative;
+          left: 0;
+          animation: logo-stripe 40s linear infinite forwards;
+
+          img {
+            height: 12rem;
+            display: block;
+            max-width: min-content;
+            width: 5000px;
+          }
+
+
+        }
+      }
+    }
   }
 }
 
@@ -623,6 +653,11 @@ main {
 
   .heading {
     color: inherit;
+  }
+
+  .display-img {
+    max-width: 1000px;
+    margin-inline: auto;
   }
 }
 

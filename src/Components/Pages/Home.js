@@ -232,7 +232,7 @@ const Home = () => {
       <Stats />
 
       {/* animated tape  */}
-      <section className="animated-logos-tape">
+      <section className="animated-logos-stripe">
         <div className="page-width">
           <HeadingWithLine
             data={{
@@ -243,7 +243,7 @@ const Home = () => {
 
         <ResponsiveDisplayImg
           data={{
-            img: "/assets/pages/home/logos-band.png",
+            img: "/assets/pages/home/logo-stripe.png",
           }}
         />
       </section>

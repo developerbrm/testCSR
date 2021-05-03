@@ -126,11 +126,12 @@ header nav .customers-group {
 }
 
 header nav .customers-group .icon {
-  max-width: 1rem;
+  width: 1.5rem;
 }
 
 header nav .customers-group .btn {
   border-radius: 100px;
+  font-size: 1rem;
 }
 
 header nav .has-sublinks {
@@ -269,6 +270,11 @@ main {
 #home .hero .basic-grid-container .img-container img {
   -o-object-fit: contain;
      object-fit: contain;
+  max-height: 40rem;
+}
+
+#home .hero .content-container .heading {
+  font-size: clamp(1.5rem, 6vw, 3.5rem);
 }
 
 #home .quotes .txt-container {
@@ -360,9 +366,30 @@ main {
   margin-bottom: 0;
 }
 
-#home .animated-logos-tape {
+#home .animated-logos-stripe {
   background-color: #fff;
+  padding: 3rem 0;
+}
+
+#home .animated-logos-stripe .display-img {
   padding: 2rem 0;
+}
+
+#home .animated-logos-stripe .display-img .img-container picture {
+  display: block;
+  position: relative;
+  left: 0;
+  -webkit-animation: logo-stripe 40s linear infinite forwards;
+          animation: logo-stripe 40s linear infinite forwards;
+}
+
+#home .animated-logos-stripe .display-img .img-container picture img {
+  height: 12rem;
+  display: block;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  width: 5000px;
 }
 
 #quotes .hero {
@@ -707,6 +734,11 @@ main {
 
 .stats .heading {
   color: inherit;
+}
+
+.stats .display-img {
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 footer {

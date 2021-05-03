@@ -1,9 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import HamIcon from "./Utilities/mini-comps/HamIcon";
+import { useIntercom } from "react-use-intercom";
 
 const Header = () => {
   const headerRef = useRef(null);
+  const { show } = useIntercom();
 
   const handleHamClick = (e) => {
     if (!e) return;
@@ -19,6 +21,11 @@ const Header = () => {
       // target.setAttribute("aria-expanded", target.classList.contains("opened"));
       headerRef.current.classList.toggle("hide");
     }
+  };
+
+  const handleCustomersClick = (e) => {
+    handleLinkClick();
+    show();
   };
 
   const handleLinkClick = () => {
@@ -101,7 +108,7 @@ const Header = () => {
           <div className="nav-links-group">
             <div className="customers-group">
               <span>
-                <Link onClick={handleLinkClick} className="icon" to="/">
+                <Link onClick={handleCustomersClick} className="icon" to="/">
                   <img src="/assets/icon-customers.png" alt="customers"></img>
                 </Link>
               </span>
