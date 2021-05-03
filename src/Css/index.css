@@ -94,7 +94,6 @@ header nav .nav-links-group .main-links-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 3rem;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -107,8 +106,16 @@ header nav .nav-links-group .main-links-container .menu-container {
   display: inline;
 }
 
+header nav .nav-links-group .main-links-container li {
+  margin-left: 3rem;
+}
+
 header nav .nav-links-group .main-links-container li img {
   min-width: 2rem;
+}
+
+header nav .nav-links-group .main-links-container li:first-of-type {
+  margin-left: 0;
 }
 
 header nav .nav-links-group .main-links-container .main-link {
@@ -127,16 +134,24 @@ header nav .customers-group {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
 }
 
 header nav .customers-group .icon {
   width: 1.5rem;
+  display: block;
 }
 
 header nav .customers-group .btn {
   border-radius: 100px;
   font-size: 1rem;
+}
+
+header nav .customers-group span {
+  margin-left: 1rem;
+}
+
+header nav .customers-group span:first-of-type {
+  margin-left: 0;
 }
 
 header nav .has-sublinks {
@@ -211,7 +226,7 @@ header nav img {
   header nav .logo-container img {
     margin: 0 auto;
   }
-  header nav ul {
+  header nav .nav-links-group ul {
     padding: 1rem 0;
     height: auto;
     margin: 0;
@@ -222,19 +237,26 @@ header nav img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    gap: 1.5rem !important;
   }
-  header nav ul .has-sublinks {
+  header nav .nav-links-group ul .has-sublinks {
     text-align: center;
   }
-  header nav ul .has-sublinks ul {
+  header nav .nav-links-group ul .has-sublinks ul {
     padding: 0 !important;
     position: relative;
+  }
+  header nav .nav-links-group .main-links-container li {
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+  header nav .nav-links-group .main-links-container li:first-of-type {
+    margin-top: 0;
   }
   header .customers-group {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+    padding-top: 2rem;
   }
   header .customers-group .btn {
     font-size: 1.3rem;
@@ -861,4 +883,5 @@ footer .social-icons-container {
 
 footer .social-icons-container .social-link-item img {
   height: 1.5rem;
+  width: 1.5rem;
 }

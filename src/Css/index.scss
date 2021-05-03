@@ -53,7 +53,6 @@ header {
         transition: 0.3s ease;
         display: flex;
         align-items: center;
-        gap: 3rem;
         align-content: center;
         justify-content: center;
         padding: 0;
@@ -63,8 +62,14 @@ header {
         }
 
         li {
+          margin-left: 3rem;
+
           img {
             min-width: 2rem;
+          }
+
+          &:first-of-type {
+            margin-left: 0;
           }
         }
 
@@ -78,15 +83,23 @@ header {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      gap: 1rem;
 
       .icon {
         width: 1.5rem;
+        display: block;
       }
 
       .btn {
         border-radius: 100px;
         font-size: 1rem;
+      }
+
+      span {
+        margin-left: 1rem;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
       }
     }
 
@@ -159,20 +172,32 @@ header {
         }
       }
 
-      ul {
-        padding: 1rem 0;
-        height: auto;
-        margin: 0;
-        flex-direction: column;
-        justify-content: start;
-        gap: 1.5rem !important;
+      .nav-links-group {
+        ul {
+          padding: 1rem 0;
+          height: auto;
+          margin: 0;
+          flex-direction: column;
+          justify-content: start;
 
-        .has-sublinks {
-          text-align: center;
+          .has-sublinks {
+            text-align: center;
 
-          ul {
-            padding: 0 !important;
-            position: relative;
+            ul {
+              padding: 0 !important;
+              position: relative;
+            }
+          }
+        }
+
+        .main-links-container {
+          li {
+            margin: 0;
+            margin-top: 1.5rem;
+
+            &:first-of-type {
+              margin-top: 0;
+            }
           }
         }
       }
@@ -180,6 +205,7 @@ header {
 
     .customers-group {
       justify-content: center !important;
+      padding-top: 2rem;
 
       .btn {
         font-size: 1.3rem;
@@ -769,6 +795,7 @@ footer {
     .social-link-item {
       img {
         height: 1.5rem;
+        width: 1.5rem;
       }
     }
   }
