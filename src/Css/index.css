@@ -37,6 +37,11 @@
   z-index: 1000;
 }
 
+.fixed-mob-logo .logo-container img {
+  min-width: revert !important;
+  width: 5rem !important;
+}
+
 @media (max-width: 900px) {
   .fixed-mob-logo {
     display: block;
@@ -201,7 +206,7 @@ header nav img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   header nav .logo-container img {
     margin: 0 auto;
@@ -217,7 +222,7 @@ header nav img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    gap: 1rem !important;
+    gap: 1.5rem !important;
   }
   header nav ul .has-sublinks {
     text-align: center;
@@ -230,6 +235,9 @@ header nav img {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+  }
+  header .customers-group .btn {
+    font-size: 1.3rem;
   }
 }
 

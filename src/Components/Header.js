@@ -48,7 +48,7 @@ const Header = () => {
       <div className="fixed-mob-logo">
         <div className="nav-link-item">
           <Link onClick={handleLinkClick} className="logo-container" to="/">
-            <img src="/assets/logo.png" alt="logo"></img>
+            <img src="/assets/logo-mob.png" alt="logo"></img>
           </Link>
         </div>
       </div>

@@ -10,6 +10,13 @@ $mob-nav-breakpoint: 900px;
   left: 1rem;
   z-index: 1000;
 
+  .logo-container {
+    img {
+      min-width: revert !important;
+      width: 5rem !important;
+    }
+  }
+
   @media (max-width: $mob-nav-breakpoint) {
     display: block;
   }
@@ -144,7 +151,7 @@ header {
       text-align: center;
       place-content: center;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.5rem;
 
       .logo-container {
         img {
@@ -158,7 +165,7 @@ header {
         margin: 0;
         flex-direction: column;
         justify-content: start;
-        gap: 1rem !important;
+        gap: 1.5rem !important;
 
         .has-sublinks {
           text-align: center;
@@ -173,6 +180,10 @@ header {
 
     .customers-group {
       justify-content: center !important;
+
+      .btn {
+        font-size: 1.3rem;
+      }
     }
   }
 
@@ -562,10 +573,8 @@ main {
     .basic-grid-container {
       align-items: stretch;
 
-      .display-img{
-
-        .img-container{
-
+      .display-img {
+        .img-container {
           border-radius: 10px;
           overflow: hidden;
         }
