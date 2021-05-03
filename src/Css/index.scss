@@ -126,6 +126,7 @@ header {
 
   // mobile rules
   @media (max-width: $mob-nav-breakpoint) {
+    font-size: 1.5rem;
     position: fixed;
     padding-top: 0;
     margin: 0;
@@ -199,6 +200,7 @@ main {
 
     .basic-grid-container {
       justify-content: center;
+      max-width: 1400px;
 
       .grid-item-1 {
         .img-container {
@@ -257,6 +259,7 @@ main {
 
   .procedure {
     padding-inline: 5%;
+    padding-bottom: 0;
   }
 
   .dark,
@@ -578,7 +581,7 @@ main {
     }
 
     .step {
-      $grid-height: 35rem;
+      $grid-height: 40rem;
       display: grid;
       justify-content: center;
       gap: 2rem;
@@ -626,6 +629,7 @@ main {
         .img-container {
           img {
             object-fit: contain;
+            max-height: 30rem;
           }
         }
       }
@@ -679,7 +683,8 @@ footer {
     .address-area {
       address {
         max-width: 45ch;
-      }
+  font-family: "Montserrat";
+}
 
       .icon-link {
         display: flex;

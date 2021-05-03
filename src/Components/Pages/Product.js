@@ -1,8 +1,13 @@
 import React from "react";
 import ResponsiveDisplayImg from "../Utilities/mini-comps/ResponsiveDisplayImg";
 import SectionImgContentGrid from "../Utilities/mini-comps/SectionImgContentGrid";
+import animationObserver from "../Utilities/library/animationObserver";
 
 const Product = () => {
+  React.useEffect(() => {
+    animationObserver();
+  }, []);
+
   return (
     <div id="product" title="product">
       {/* hero  */}

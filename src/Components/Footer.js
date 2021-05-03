@@ -53,7 +53,9 @@ const Footer = () => {
               <img src="/assets/icon-mail.png" alt="mail icon" />
             </div>
             <div className="link">
-              <a href="mailto:hello@storezippy.com">hello@storezippy.com</a>
+              <a href="mailto:storezippydigital@gmail.com">
+                storezippydigital@gmail.com
+              </a>
             </div>
           </div>
           {/* <div className="icon-link">

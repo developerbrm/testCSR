@@ -64,7 +64,7 @@ const Header = () => {
             <ul className="main-links-container">
               <li>
                 <Link onClick={handleLinkClick} className="main-link" to="/why">
-                  Why US ?
+                  Why Us ?
                 </Link>
               </li>
               <li>

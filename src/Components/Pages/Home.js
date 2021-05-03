@@ -1,23 +1,38 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import animationObserver from "../Utilities/library/animationObserver";
 import HeadingWithLine from "../Utilities/mini-comps/HeadingWithLine";
 import ResponsiveDisplayImg from "../Utilities/mini-comps/ResponsiveDisplayImg";
 import Stats from "../Utilities/mini-comps/Stats";
 
 const Home = () => {
+  React.useEffect(() => {
+    animationObserver();
+  }, []);
+
   return (
     <div id="home" title="home">
       {/* hero  */}
       <section className="hero">
         <div className="basic-grid-container page-width">
-          <div className="grid-item grid-item-1">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".1"
+            className="grid-item grid-item-1"
+          >
             <div className="content-container width-40ch">
               <h2 className="primary-color primary-font heading text-with-line">
                 On Demand Warehousing and Fulfillment solution{" "}
               </h2>
             </div>
           </div>
-          <div className="grid-item grid-item-2">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".3"
+            className="grid-item grid-item-2"
+          >
             <div className="img-container">
               <img src="/assets/pages/home/hero-grid-2.png" alt="image" />
             </div>
@@ -28,7 +43,12 @@ const Home = () => {
       {/* quotes  */}
       <section className="quotes">
         <div className="basic-grid-container page-width">
-          <div className="grid-item grid-item-1">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".1"
+            className="grid-item grid-item-1"
+          >
             <div className="txt-container">
               <p className="rte">
                 When logistics becomes the most critical part of your business
@@ -53,7 +73,12 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="grid-item grid-item-2">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".3"
+            className="grid-item grid-item-2"
+          >
             <div className="img-container">
               <img src="/assets/pages/home/forklift-vector.png" alt="image" />
             </div>
@@ -79,7 +104,12 @@ const Home = () => {
               img: "assets/pages/home/video.jpg",
             }}
           />
-          <div className="grid-item">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".1"
+            className="grid-item"
+          >
             <div className="txt-container">
               <h2 className="primary-font heading">
                 It’s time to outsource your fulfillment needs
@@ -114,7 +144,12 @@ const Home = () => {
 
       {/* dark  */}
       <section className="dark">
-        <div className="basic-grid-container heading-with-line-grid-container">
+        <div
+          data-animname="fade-in-up"
+          data-onetime="true"
+          data-delay=".1"
+          className="basic-grid-container heading-with-line-grid-container"
+        >
           <div className="heading-container">
             <div className="secondary-font">
               <Link className="btn" to="/">
@@ -123,7 +158,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="line-container">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".2"
+            className="line-container"
+          >
             <div className="gradient-line"></div>
           </div>
         </div>
@@ -132,7 +172,12 @@ const Home = () => {
         <br />
         <br />
 
-        <div className="basic-grid-container">
+        <div
+          data-animname="fade-in-up"
+          data-onetime="true"
+          data-delay=".3"
+          className="basic-grid-container"
+        >
           <div className="content-container">
             <h2 className="heading primary-color primary-font">
               Store Zippy won’t keep you in the dark!
@@ -189,7 +234,12 @@ const Home = () => {
             }}
           />
 
-          <div className="content-container">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".1"
+            className="content-container"
+          >
             <h2 className="heading primary-color primary-font">
               Warehouse Solutions with a personalised service
             </h2>
@@ -206,7 +256,12 @@ const Home = () => {
       {/* package  */}
       <section className="package page-width">
         <div className="basic-grid-container page-width">
-          <div className="content-container">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".1"
+            className="content-container"
+          >
             <h2 className="heading primary-color primary-font">
               The Complete Package
             </h2>
@@ -254,7 +309,12 @@ const Home = () => {
       {/* get quote  */}
       <section className="quotes page-width">
         <div className="basic-grid-container page-width">
-          <div className="content-container">
+          <div
+            data-animname="fade-in-up"
+            data-onetime="true"
+            data-delay=".1"
+            className="content-container"
+          >
             <h2 className="heading primary-color primary-font">
               Looking for Fulfillment Center solutions?
               <br />

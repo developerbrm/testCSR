@@ -176,6 +176,7 @@ header nav img {
 
 @media (max-width: 900px) {
   header {
+    font-size: 1.5rem;
     position: fixed;
     padding-top: 0;
     margin: 0;
@@ -256,6 +257,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1400px;
 }
 
 #home .hero .basic-grid-container .grid-item-1 .img-container {
@@ -309,6 +311,7 @@ main {
 
 #home .procedure {
   padding-inline: 5%;
+  padding-bottom: 0;
 }
 
 #home .dark,
@@ -670,9 +673,9 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
-  -ms-grid-rows: 35rem;
+  -ms-grid-rows: 40rem;
   -ms-grid-columns: 1fr 1fr;
-      grid-template: 35rem/ 1fr 1fr;
+      grid-template: 40rem/ 1fr 1fr;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -683,7 +686,7 @@ main {
   background-color: #2658a3;
   position: absolute;
   left: 0;
-  height: calc(35rem + 1rem);
+  height: calc(40rem + 1rem);
   width: 0.5rem;
   border-radius: 5px;
   z-index: 0;
@@ -724,6 +727,7 @@ main {
 #product .steps .step .display-img .img-container img {
   -o-object-fit: contain;
      object-fit: contain;
+  max-height: 30rem;
 }
 
 .stats {
@@ -762,6 +766,7 @@ footer .links-container {
 
 footer .links-container .address-area address {
   max-width: 45ch;
+  font-family: "Montserrat";
 }
 
 footer .links-container .address-area .icon-link {
