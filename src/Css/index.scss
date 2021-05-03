@@ -445,7 +445,7 @@ main {
 
       p {
         position: relative;
-        font-weight: bold;
+        font-weight: 400;
 
         &::after,
         &::before {
@@ -541,6 +541,8 @@ main {
   }
 
   .contact-sales {
+    padding-inline: 5%;
+
     button {
       width: 100%;
       background-color: $btn-bg-color;

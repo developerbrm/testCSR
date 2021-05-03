@@ -510,7 +510,7 @@ main {
 
 #quotes .testimonial .content-container p {
   position: relative;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 #quotes .testimonial .content-container p::after, #quotes .testimonial .content-container p::before {
@@ -608,6 +608,10 @@ main {
   #contact .contact-grid-container .images-area {
     display: none;
   }
+}
+
+#contact .contact-sales {
+  padding-inline: 5%;
 }
 
 #contact .contact-sales button {
