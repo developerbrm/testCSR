@@ -746,10 +746,19 @@ main {
 }
 
 #not-found-page {
-  height: 50vh;
+  padding-bottom: clamp(3rem, 5vh, 8rem);
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+#not-found-page h1 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#not-found-page .btn {
+  font-size: 1.1rem;
 }
 
 footer {

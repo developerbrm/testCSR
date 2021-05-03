@@ -112,7 +112,6 @@ const Product = () => {
           text:
             "Once you ship your inventory to our warehouse centre, we perform thorough quality checks, count the inbound stock and report discrepancies, if any, to you without any delays.",
           img: "/assets/pages/product/inventory.png",
-          mobImg: "/assets/pages/product/inventory-mob.png",
           imgRight: false,
         }}
       />

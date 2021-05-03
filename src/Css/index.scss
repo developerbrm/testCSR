@@ -665,9 +665,18 @@ main {
 
 // 404 page
 #not-found-page {
-  height: 50vh;
+  padding-bottom: clamp(3rem, 5vh, 8rem);
   display: grid;
   place-content: center;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+  }
 }
 
 footer {
