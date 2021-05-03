@@ -650,6 +650,17 @@ main {
           align-items: stretch;
 }
 
+#product .hero .basic-grid-container .display-img .img-container,
+#product .inventory .basic-grid-container .display-img .img-container,
+#product .inventory-dashboard .basic-grid-container .display-img .img-container,
+#product .report .basic-grid-container .display-img .img-container,
+#product .dispatch .basic-grid-container .display-img .img-container,
+#product .returns .basic-grid-container .display-img .img-container,
+#product .warehouse .basic-grid-container .display-img .img-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 #product .hero {
   padding: 3rem 5%;
 }
@@ -773,7 +784,7 @@ footer .links-container {
   -ms-grid-rows: 1fr;
   -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
       grid-template: 1fr/repeat(auto-fit, minmax(15rem, 1fr));
-  padding-inline: 10%;
+  padding-inline: 5%;
   gap: 2rem;
   max-width: 1400px;
   margin: 0 auto;
