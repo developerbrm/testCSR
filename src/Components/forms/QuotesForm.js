@@ -16,7 +16,7 @@ function QotesForm() {
   return (
     <div className="form-container">
       <form
-        action="https://formsubmit.co/braham@sociomonkey.com"
+        // action="https://formsubmit.co/braham@sociomonkey.com"
         method="POST"
         id="contact form"
         className="pageForm qotesform"

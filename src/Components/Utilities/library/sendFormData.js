@@ -12,7 +12,7 @@ const sendFormData = (response, setMessage) => {
 
   console.log(data)
 
-  fetch("https://formsubmit.co/ajax/braham@sociomonkey.com", {
+  fetch("https://formsubmit.co/ajax/garima@sociomonkey.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

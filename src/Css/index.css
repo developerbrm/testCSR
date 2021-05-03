@@ -250,7 +250,7 @@ header.hide {
 main {
   background: -webkit-gradient(linear, right top, left top, color-stop(-32.85%, rgba(33, 190, 213, 0.7)), color-stop(81.94%, rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, rgba(33, 190, 213, 0.7) -32.85%, rgba(255, 255, 255, 0) 81.94%);
-  padding-top: clamp(3rem, 5vh, 8rem);
+  padding-top: clamp(3rem, 7vh, 9rem);
 }
 
 #home {
