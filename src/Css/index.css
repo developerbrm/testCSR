@@ -745,6 +745,13 @@ main {
   margin-inline: auto;
 }
 
+#not-found-page {
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
 footer {
   background-color: #002559;
   padding: 1rem 0;

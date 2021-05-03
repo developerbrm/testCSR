@@ -108,7 +108,7 @@ const Header = () => {
           <div className="nav-links-group">
             <div className="customers-group">
               <span>
-                <Link onClick={handleCustomersClick} className="icon" to="/">
+                <Link onClick={handleCustomersClick} className="icon" to="#">
                   <img src="/assets/icon-customers.png" alt="customers"></img>
                 </Link>
               </span>
@@ -118,7 +118,7 @@ const Header = () => {
                 </Link>
               </span>
               <span>
-                <Link onClick={handleLinkClick} className="btn" to="/">
+                <Link onClick={handleLinkClick} className="btn" to="/quotes">
                   Get Started
                 </Link>
               </span>

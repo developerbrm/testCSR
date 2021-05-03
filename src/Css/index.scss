@@ -313,7 +313,7 @@ main {
     .display-img {
       padding: 2rem 0;
 
-        .img-container {
+      .img-container {
         picture {
           display: block;
           position: relative;
@@ -326,8 +326,6 @@ main {
             max-width: min-content;
             width: 5000px;
           }
-
-
         }
       }
     }
@@ -665,6 +663,13 @@ main {
   }
 }
 
+// 404 page
+#not-found-page {
+  height: 50vh;
+  display: grid;
+  place-content: center;
+}
+
 footer {
   background-color: $header-bg-color;
   padding: 1rem 0;
@@ -683,8 +688,8 @@ footer {
     .address-area {
       address {
         max-width: 45ch;
-  font-family: "Montserrat";
-}
+        font-family: "Montserrat";
+      }
 
       .icon-link {
         display: flex;
