@@ -6,6 +6,7 @@
 
 .ham-icon-container img {
   height: 30px;
+  width: 30px;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: 0.3s ease;

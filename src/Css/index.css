@@ -191,7 +191,8 @@ header nav img {
   header nav {
     padding: 0;
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     -ms-grid-rows: (-webkit-max-content)[3];
     -ms-grid-rows: (max-content)[3];
     -ms-grid-columns: 1fr;
@@ -279,10 +280,6 @@ main {
   background: -webkit-gradient(linear, right top, left top, color-stop(-32.85%, rgba(33, 190, 213, 0.7)), color-stop(81.94%, rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, rgba(33, 190, 213, 0.7) -32.85%, rgba(255, 255, 255, 0) 81.94%);
   padding-top: clamp(2rem, 5vh, 8rem);
-}
-
-#home {
-  overflow-x: hidden;
 }
 
 #home .hero {
@@ -412,6 +409,10 @@ main {
 
 #home .animated-logos-stripe .display-img {
   padding: 2rem 0;
+}
+
+#home .animated-logos-stripe .display-img .img-container {
+  overflow-x: hidden;
 }
 
 #home .animated-logos-stripe .display-img .img-container picture {
