@@ -350,7 +350,7 @@ main {
       padding: 2rem 0;
 
       .img-container {
-        overflow-x: hidden;
+        overflow-x: clip;
 
         picture {
           display: block;

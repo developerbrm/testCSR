@@ -412,7 +412,7 @@ main {
 }
 
 #home .animated-logos-stripe .display-img .img-container {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 #home .animated-logos-stripe .display-img .img-container picture {
