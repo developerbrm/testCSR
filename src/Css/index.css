@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: "Helvetica Round";
+  font-family: "Helvetica Rounded";
   src: url("../src-assets/helvetica-rounded-bold.otf");
 }
 
@@ -306,10 +306,6 @@ main {
   -o-object-fit: contain;
      object-fit: contain;
   max-height: 40rem;
-}
-
-#home .hero .content-container .heading {
-  font-size: clamp(1.5rem, 6vw, 3.5rem);
 }
 
 #home .quotes .txt-container {
