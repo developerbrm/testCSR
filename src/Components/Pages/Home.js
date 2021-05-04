@@ -57,7 +57,7 @@ const Home = () => {
                 STOREZIPPY is the place to go.
                 <br />
                 <br />
-                We pride ourselves on tailoring a warehousing solution to help
+                {/* We pride ourselves on tailoring a warehousing solution to help
                 our clients achieve their storage, fulfilment and distribution
                 goals.
                 <br />
@@ -65,7 +65,7 @@ const Home = () => {
                 We don't want to think of ourselves just as a warehousing
                 service provider but as your active business partner.
                 <br />
-                <br />
+                <br /> */}
               </p>
 
               <Link className="btn" to="/quotes">

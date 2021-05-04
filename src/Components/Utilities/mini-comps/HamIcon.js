@@ -1,10 +1,13 @@
 import React from "react";
 import "../../../Css/ham.css";
 
-function HamIcon({ handleHamClick }) {
+function HamIcon({ data }) {
+  const { handleHamClick, hamMenuRef } = data;
+
   return (
     <div className="ham-icon-container">
       <button
+        ref={hamMenuRef}
         className="ham-menu"
         onClick={handleHamClick}
         aria-label="Main Menu"
@@ -22,6 +25,7 @@ function HamIcon({ handleHamClick }) {
         </svg> */}
 
         <img src="/assets/menu.png" />
+        <img src="/assets/menu-cross.png" />
       </button>
     </div>
   );

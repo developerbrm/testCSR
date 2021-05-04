@@ -5,21 +5,24 @@ import { useIntercom } from "react-use-intercom";
 
 const Header = () => {
   const headerRef = useRef(null);
+  const hamMenuRef = useRef(null);
   const { show } = useIntercom();
 
   const handleHamClick = (e) => {
     if (!e) return;
 
     const target = e.target.closest(".ham-menu svg");
+    headerRef.current.classList.toggle("hide");
 
     if (headerRef.current.classList.contains("hide")) {
       // target.classList.add("opened");
       // target.setAttribute("aria-expanded", target.classList.contains("opened"));
-      headerRef.current.classList.toggle("hide");
+
+      hamMenuRef.current.classList.remove("open");
     } else {
       // target.classList.remove("opened");
       // target.setAttribute("aria-expanded", target.classList.contains("opened"));
-      headerRef.current.classList.toggle("hide");
+      hamMenuRef.current.classList.add("open");
     }
   };
 
@@ -44,13 +47,14 @@ const Header = () => {
 
   return (
     <>
-      <HamIcon handleHamClick={handleHamClick} />
-      <div className="fixed-mob-logo">
+      <div className="mobile-header">
         <div className="nav-link-item">
           <Link onClick={handleLinkClick} className="logo-container" to="/">
-            <img src="/assets/logo-mob.png" alt="logo"></img>
+            <img src="/assets/logo.png" alt="logo" />
           </Link>
         </div>
+
+        <HamIcon data={{ handleHamClick, hamMenuRef }} />
       </div>
 
       <header ref={headerRef}>
@@ -107,7 +111,7 @@ const Header = () => {
           </div>
           <div className="nav-links-group">
             <div className="customers-group">
-              <span>
+              {/* <span>
                 <Link onClick={handleCustomersClick} className="icon" to="#">
                   <img src="/assets/icon-customers.png" alt="customers"></img>
                 </Link>
@@ -116,7 +120,7 @@ const Header = () => {
                 <Link onClick={handleLinkClick} className="icon" to="/">
                   <img src="/assets/icon-search.png" alt="search"></img>
                 </Link>
-              </span>
+              </span> */}
               <span>
                 <Link onClick={handleLinkClick} className="btn" to="/quotes">
                   Get Started

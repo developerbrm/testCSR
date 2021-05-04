@@ -101,7 +101,7 @@ const Footer = () => {
       </div>
 
       <div className="gradient-line"></div>
-      <p className="rte txt-center">
+      <p className="rte txt-center" style={{ margin: "1rem" }}>
         Copyright © 2020 Eshopbox Ecommerce Pvt. Ltd. All rights reserved
       </p>
     </footer>

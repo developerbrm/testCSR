@@ -71,15 +71,15 @@ html {
   scroll-behavior: smooth;
 
   @media (max-width: 750px) {
-    font-size: 90%;
+    font-size: 98%;
   }
 
   @media (max-width: 650px) {
-    font-size: 80%;
+    font-size: 95%;
   }
 
   @media (max-width: 550px) {
-    font-size: 70%;
+    font-size: 90%;
   }
 }
 
@@ -601,5 +601,12 @@ a,
         rgba(255, 255, 255, 0) 74.12%
       ),
       linear-gradient(180deg, #4069a3 0%, #3c76ab 100%);
+  }
+}
+
+// .split-half
+.split-half {
+  @media (max-width: 750px) {
+    flex-direction: column;
   }
 }
