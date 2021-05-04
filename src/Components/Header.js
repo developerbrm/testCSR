@@ -26,17 +26,26 @@ const Header = () => {
     }
   };
 
+  const animateHamIcon = () => {
+    if (headerRef.current.classList.contains("hide")) {
+      hamMenuRef.current.classList.remove("open");
+    } else {
+      hamMenuRef.current.classList.add("open");
+    }
+  };
+
   const handleCustomersClick = (e) => {
     handleLinkClick();
     show();
   };
 
   const handleLinkClick = () => {
-    handleHamClick();
-
     if (window.innerWidth <= 650) {
       headerRef.current.classList.add("hide");
     }
+
+    handleHamClick();
+    animateHamIcon();
   };
 
   useEffect(() => {
