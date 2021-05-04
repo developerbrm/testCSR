@@ -401,6 +401,8 @@ main {
 #home .animated-logos-stripe {
   background-color: #fff;
   padding: 3rem 0;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 #home .animated-logos-stripe .display-img {
