@@ -52,7 +52,7 @@
   text-align: inherit;
   color: inherit;
   font-weight: 800;
-  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-size: clamp(1.8rem, 5vw, 3rem);
   margin-bottom: 0.4em;
 }
 

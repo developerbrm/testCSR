@@ -308,6 +308,10 @@ main {
   max-height: 40rem;
 }
 
+#home .hero .content-container .heading {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+}
+
 #home .quotes .txt-container {
   max-width: 40ch;
 }
