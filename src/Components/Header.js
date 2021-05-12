@@ -86,7 +86,7 @@ const Header = () => {
                   className="main-link"
                   to="/product"
                 >
-                  Product
+                  How it Works?
                 </Link>
               </li>
               <li>

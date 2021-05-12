@@ -89,10 +89,6 @@ const Contact = () => {
     e.preventDefault();
     setMessage(() => "Connecting to the server..");
     sendFormData(contactFormData, setMessage);
-
-    setTimeout(() => {
-      setMessage(() => "");
-    }, 6000);
   };
 
   const handleInvalid = (e) => {

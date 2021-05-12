@@ -102,8 +102,7 @@ const Footer = () => {
 
       <div className="gradient-line"></div>
       <p className="rte txt-center" style={{ margin: "1rem" }}>
-        Copyright © 2020 Eshopbox Ecommerce Pvt. Ltd. All rights reserved
-      </p>
+      Copyright © 2020 EMount Ventures Pvt. Ltd. All rights reserved      </p>
     </footer>
   );
 };

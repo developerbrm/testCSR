@@ -10,7 +10,7 @@ const sendFormData = (response, setMessage) => {
     }
   }
 
-  console.log(data)
+  console.log(data);
 
   fetch("https://formsubmit.co/ajax/garima@sociomonkey.com", {
     method: "POST",
@@ -23,11 +23,16 @@ const sendFormData = (response, setMessage) => {
     .then((response) => response.json())
     .then((data) => {
       setMessage(() => data["message"]);
-      console.log(data)
+      console.log(data);
     })
     .catch((error) => {
       setMessage(() => error["message"]);
-      console.log(error)
+      console.log(error);
+    })
+    .finally(() => {
+      setTimeout(() => {
+        setMessage(() => "");
+      }, 10000);
     });
 };
 
