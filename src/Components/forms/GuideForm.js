@@ -163,7 +163,7 @@ function GuideForm() {
 
         <div className="form-item form-submit">
           <button type="submit" className="btn">
-            Request Pricing
+            Download Now
           </button>
         </div>
 

@@ -801,6 +801,10 @@ main {
   margin-inline: auto;
 }
 
+#guide .hero .basic-grid-container {
+  gap: 5rem;
+}
+
 #guide .hero .rte ul {
   font-weight: bold;
   padding: 0;
@@ -823,13 +827,13 @@ main {
       grid-template: 1fr / auto auto;
 }
 
-#guide .guide-grid-container .heading-container .heading {
+#guide .guide-grid-container .heading-with-line-grid-container .heading-container .heading {
   font-size: clamp(1.4rem, 5vw, 1.4rem);
   max-width: 100%;
 }
 
-#guide .guide-grid-container .form-container form {
-  padding-inline: 5%;
+#guide .guide-grid-container .heading-with-line-grid-container .line-container {
+  max-width: 10rem;
 }
 
 #guide .guide-grid-container .form-container form .form-item [data-required="true"] > span {

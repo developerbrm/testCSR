@@ -716,6 +716,10 @@ main {
 // guide page
 #guide {
   .hero {
+    .basic-grid-container {
+      gap: 5rem;
+    }
+
     .rte {
       ul {
         font-weight: bold;
@@ -736,17 +740,21 @@ main {
     align-items: stretch;
     grid-template: 1fr / auto auto;
 
-    .heading-container {
-      .heading {
-        font-size: clamp(1.4rem, 5vw, 1.4rem);
-        max-width: 100%;
+    .heading-with-line-grid-container {
+      .heading-container {
+        .heading {
+          font-size: clamp(1.4rem, 5vw, 1.4rem);
+          max-width: 100%;
+        }
+      }
+
+      .line-container {
+        max-width: 10rem;
       }
     }
 
     .form-container {
       form {
-        padding-inline: 5%;
-
         .form-item {
           [data-required="true"] > span {
             display: inline-block;
