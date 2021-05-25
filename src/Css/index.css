@@ -801,6 +801,89 @@ main {
   margin-inline: auto;
 }
 
+#guide .hero .rte ul {
+  font-weight: bold;
+  padding: 0;
+  padding-top: 2rem;
+}
+
+#guide .hero .rte ul li {
+  margin-left: 1rem;
+  list-style: revert;
+  font-weight: normal;
+  padding-top: 0.5rem;
+}
+
+#guide .guide-grid-container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: auto auto;
+      grid-template: 1fr / auto auto;
+}
+
+#guide .guide-grid-container .heading-container .heading {
+  font-size: clamp(1.4rem, 5vw, 1.4rem);
+  max-width: 100%;
+}
+
+#guide .guide-grid-container .form-container form {
+  padding-inline: 5%;
+}
+
+#guide .guide-grid-container .form-container form .form-item [data-required="true"] > span {
+  display: inline-block;
+}
+
+#guide .guide-grid-container .form-container form .form-item [data-required="true"] > span::after {
+  content: "*";
+  color: red;
+  padding-left: 0.1rem;
+}
+
+#guide .guide-grid-container .form-container form .form-item input,
+#guide .guide-grid-container .form-container form .form-item textarea,
+#guide .guide-grid-container .form-container form .form-item select {
+  margin-top: 0.5rem;
+}
+
+#guide .guide-grid-container .form-container form .split-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#guide .guide-grid-container .images-area {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#guide .guide-grid-container .images-area .display-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#guide .guide-grid-container .images-area .display-img .img-container {
+  height: 100%;
+}
+
+@media (max-width: 750px) {
+  #guide .guide-grid-container {
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template: auto auto / 1fr;
+  }
+}
+
 #not-found-page {
   padding-bottom: clamp(3rem, 5vh, 8rem);
   display: -ms-grid;

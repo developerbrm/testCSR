@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ResponsiveDisplayImg from "./ResponsiveDisplayImg";
 
@@ -14,6 +14,12 @@ const SectionImgContentGrid = ({ data }) => {
     mobImg,
     imgRight = true,
   } = data;
+
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    textRef.current.innerHTML = text;
+  }, []);
 
   const RenderContent = () => (
     <div className="content-container width-45ch">
@@ -39,14 +45,13 @@ const SectionImgContentGrid = ({ data }) => {
         </h3>
       )}
 
-      <p
+      <div
         data-animname="fade-in-up"
         data-onetime="true"
         data-delay=".2"
         className="rte"
-      >
-        {text}
-      </p>
+        ref={textRef}
+      ></div>
       {urlTo && (
         <>
           <br />

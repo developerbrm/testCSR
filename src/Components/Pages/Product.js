@@ -175,7 +175,7 @@ const Product = () => {
           text:
             "Download the free guide today and get a jump start on your 3PL Service Provider.",
           img: "/assets/pages/product/warehouse.jpg",
-          urlTo: "/download",
+          urlTo: "/guide",
           urlText: "Download",
           imgRight: true,
         }}

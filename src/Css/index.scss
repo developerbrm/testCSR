@@ -713,6 +713,87 @@ main {
   }
 }
 
+// guide page
+#guide {
+  .hero {
+    .rte {
+      ul {
+        font-weight: bold;
+        padding: 0;
+        padding-top: 2rem;
+
+        li {
+          margin-left: 1rem;
+          list-style: revert;
+          font-weight: normal;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .guide-grid-container {
+    align-items: stretch;
+    grid-template: 1fr / auto auto;
+
+    .heading-container {
+      .heading {
+        font-size: clamp(1.4rem, 5vw, 1.4rem);
+        max-width: 100%;
+      }
+    }
+
+    .form-container {
+      form {
+        padding-inline: 5%;
+
+        .form-item {
+          [data-required="true"] > span {
+            display: inline-block;
+
+            &::after {
+              content: "*";
+              color: red;
+              padding-left: 0.1rem;
+            }
+          }
+
+          input,
+          textarea,
+          select {
+            margin-top: 0.5rem;
+          }
+        }
+
+        .split-half {
+          display: flex;
+          gap: 1rem;
+          align-items: stretch;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .images-area {
+      align-self: center;
+
+      .display-img {
+        border-radius: 10px;
+        overflow: hidden;
+
+        .img-container {
+          height: 100%;
+        }
+      }
+    }
+
+    // mobile rules
+    @media (max-width: 750px) {
+      grid-template: auto auto / 1fr;
+    }
+  }
+}
+
 // 404 page
 #not-found-page {
   padding-bottom: clamp(3rem, 5vh, 8rem);

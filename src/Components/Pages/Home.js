@@ -120,7 +120,7 @@ const Home = () => {
                 Service Provider.
               </p>
 
-              <Link to="/" className="btn">
+              <Link to="/guide" className="btn">
                 Download
               </Link>
             </div>
