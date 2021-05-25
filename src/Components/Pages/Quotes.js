@@ -150,7 +150,7 @@ const Quotes = () => {
           heading: "Choose the Right 3PL Partner",
           text:
             " Download the free guide today and get a jump start on your 3PL Service Provider.",
-          urlTo: "/download",
+          urlTo: "/guide",
           urlText: "Download",
           img: "/assets/pages/quotes/partner.png",
         }}
