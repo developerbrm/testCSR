@@ -11,7 +11,7 @@ import Guide from "./Pages/Guide";
 const Main = () => {
   return (
     <main>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
 
       <Switch>
         <Route exact path="/guide" component={Guide} />

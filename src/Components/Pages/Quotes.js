@@ -84,6 +84,11 @@ const Quotes = () => {
     },
   ];
 
+  // scroll to top
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="quotes">
       <section className="hero">
@@ -148,8 +153,7 @@ const Quotes = () => {
         data={{
           sectionClassName: "partner-area page-width",
           heading: "Choose the Right 3PL Partner",
-          text:
-            " Download the free guide today and get a jump start on your 3PL Service Provider.",
+          text: " Download the free guide today and get a jump start on your 3PL Service Provider.",
           urlTo: "/guide",
           urlText: "Download",
           img: "/assets/pages/quotes/partner.png",

@@ -1,6 +1,6 @@
 import React from "react";
-// import { HashLink as Link } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+// import { Link } from "react-router-dom";
 import animationObserver from "../Utilities/library/animationObserver";
 import HeadingWithLine from "../Utilities/mini-comps/HeadingWithLine";
 import ResponsiveDisplayImg from "../Utilities/mini-comps/ResponsiveDisplayImg";
@@ -9,6 +9,11 @@ import Stats from "../Utilities/mini-comps/Stats";
 const Home = () => {
   React.useEffect(() => {
     animationObserver();
+  }, []);
+
+  // scroll to top
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (

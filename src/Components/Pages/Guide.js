@@ -79,7 +79,8 @@ const Guide = () => {
     },
   ];
 
-  useEffect(() => {
+  // scroll to top
+  React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 

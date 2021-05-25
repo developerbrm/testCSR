@@ -8,6 +8,11 @@ const Product = () => {
     animationObserver();
   }, []);
 
+  // scroll to top
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="product" title="product">
       {/* hero  */}
@@ -16,8 +21,7 @@ const Product = () => {
         data={{
           sectionClassName: "hero page-width",
           heading: "Reforming your Warehouse Management with Digitalization",
-          text:
-            "To have an upper hand in the era of new innovative technologies, we need to undergo a digital transformation. We at STORE ZIPPY believe in warehouse automation opportunities to add value to your business. Meeting higher client’s expectations calls for the real time inventory management and hence we keep you updated with a live dashboard ensuring you know exactly about everything related to your account.",
+          text: "To have an upper hand in the era of new innovative technologies, we need to undergo a digital transformation. We at STORE ZIPPY believe in warehouse automation opportunities to add value to your business. Meeting higher client’s expectations calls for the real time inventory management and hence we keep you updated with a live dashboard ensuring you know exactly about everything related to your account.",
           urlTo: "/quotes",
           urlText: "Get Quotes",
           img: "/assets/pages/product/hero.png",
@@ -109,8 +113,7 @@ const Product = () => {
         data={{
           sectionClassName: "inventory page-width",
           heading: "Inbound Inventory Management",
-          text:
-            "Once you ship your inventory to our warehouse centre, we perform thorough quality checks, count the inbound stock and report discrepancies, if any, to you without any delays.",
+          text: "Once you ship your inventory to our warehouse centre, we perform thorough quality checks, count the inbound stock and report discrepancies, if any, to you without any delays.",
           img: "/assets/pages/product/inventory.png",
           imgRight: false,
         }}
@@ -121,8 +124,7 @@ const Product = () => {
         data={{
           sectionClassName: "inventory-dashboard page-width",
           heading: "Inventory Storage Management",
-          text:
-            "After checking the stock, we add it to our system and allocate an appropriate location in the warehouse. The scalability of STORE ZIPPY’s system makes us suitable for a large number of businesses.",
+          text: "After checking the stock, we add it to our system and allocate an appropriate location in the warehouse. The scalability of STORE ZIPPY’s system makes us suitable for a large number of businesses.",
           img: "/assets/pages/product/inventory-dashboard.png",
           mobImg: "/assets/pages/product/inventory-dashboard-mob.png",
           imgRight: true,
@@ -134,8 +136,7 @@ const Product = () => {
         data={{
           sectionClassName: "report page-width",
           heading: "Reporting",
-          text:
-            "To manage your stock within our warehouse, our system outputs a standard suite of reports. These reports are shared with you so that you have a clear visibility into the operations and performance.",
+          text: "To manage your stock within our warehouse, our system outputs a standard suite of reports. These reports are shared with you so that you have a clear visibility into the operations and performance.",
           img: "/assets/pages/product/report.png",
           mobImg: "/assets/pages/product/report-mob.png",
           imgRight: false,
@@ -147,8 +148,7 @@ const Product = () => {
         data={{
           sectionClassName: "dispatch page-width",
           heading: "One Day Dispatch",
-          text:
-            "STORE ZIPPY prioritizes your business need of getting things where they need to be as quickly as possible. That’s why we offer a same day delivery service for the orders placed before 10am. What’s more? You will be able to track the progress online via our live dashboard.",
+          text: "STORE ZIPPY prioritizes your business need of getting things where they need to be as quickly as possible. That’s why we offer a same day delivery service for the orders placed before 10am. What’s more? You will be able to track the progress online via our live dashboard.",
           img: "/assets/pages/product/dispatch.png",
           imgRight: true,
         }}
@@ -159,8 +159,7 @@ const Product = () => {
         data={{
           sectionClassName: "returns page-width",
           heading: "Returns Management",
-          text:
-            "Management of returns is an important part of what STORE ZIPPY does. First and foremost, we do a thorough check of the returned stock. After the check, as per your guidelines, we will either return the items back to the stock or arrange it to be returned to you. ",
+          text: "Management of returns is an important part of what STORE ZIPPY does. First and foremost, we do a thorough check of the returned stock. After the check, as per your guidelines, we will either return the items back to the stock or arrange it to be returned to you. ",
           img: "/assets/pages/product/returns.png",
           mobImg: "/assets/pages/product/returns-mob.png",
           imgRight: false,
@@ -172,8 +171,7 @@ const Product = () => {
         data={{
           sectionClassName: "warehouse page-width",
           heading: "Your On Demand Digital Warehouse Partner",
-          text:
-            "Download the free guide today and get a jump start on your 3PL Service Provider.",
+          text: "Download the free guide today and get a jump start on your 3PL Service Provider.",
           img: "/assets/pages/product/warehouse.jpg",
           urlTo: "/guide",
           urlText: "Download",

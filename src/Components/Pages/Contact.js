@@ -119,6 +119,11 @@ const Contact = () => {
     }));
   }, [keyChallangesData]);
 
+  // scroll to top
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="contact">
       <div className="hero">
@@ -177,8 +182,7 @@ const Contact = () => {
         data={{
           sectionClassName: "download page-width",
           heading: "One Stop Window for all your needs",
-          text:
-            "Download the free guide today and get a jump start on your 3PL Service Provider.",
+          text: "Download the free guide today and get a jump start on your 3PL Service Provider.",
           urlTo: "/download",
           urlText: "Download",
           img: "/assets/pages/contact/download.png",
