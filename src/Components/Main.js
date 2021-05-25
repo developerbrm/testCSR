@@ -14,7 +14,7 @@ const Main = () => {
       <ScrollToTop />
 
       <Switch>
-        <Route exact path="/download" component={Guide} />
+        <Route exact path="/guide" component={Guide} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/product" component={Product} />
         <Route exact path="/quotes" component={Quotes} />
