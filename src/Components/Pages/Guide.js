@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import GuideForm from "../forms/GuideForm";
+import MailchimpGuideForm from "../forms/MailchimpGuideForm";
 import sendFormData from "../Utilities/library/sendFormData";
 import HeadingWithLine from "../Utilities/mini-comps/HeadingWithLine";
 import ResponsiveDisplayImg from "../Utilities/mini-comps/ResponsiveDisplayImg";
@@ -20,7 +21,7 @@ const Guide = () => {
       label: "Current Ecom Platform ",
     },
     siteUrl: { value: "", required: false, label: "Company Website URL" },
-    monthlyShipments: {
+    MO_SHIPS: {
       value: "",
       required: true,
       label: "Current Monthly Shipments",
@@ -66,11 +67,11 @@ const Guide = () => {
       content: "201-500",
     },
     {
-      value: "501-1,000",
+      value: "501-1000",
       content: "501-1,000",
     },
     {
-      value: "5001-10,000",
+      value: "5001-10000",
       content: "5001-10,000",
     },
     {
@@ -122,7 +123,8 @@ const Guide = () => {
                 message,
               }}
             >
-              <GuideForm />
+              {/* <GuideForm /> */}
+              <MailchimpGuideForm />
             </GuideFormContext.Provider>
           </div>
           <div className="images-area">

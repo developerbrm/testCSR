@@ -5,6 +5,7 @@ import HeadingWithLine from "../Utilities/mini-comps/HeadingWithLine";
 import ResponsiveDisplayImg from "../Utilities/mini-comps/ResponsiveDisplayImg";
 import SectionImgContentGrid from "../Utilities/mini-comps/SectionImgContentGrid";
 import { useIntercom } from "react-use-intercom";
+import MailchimpContactForm from "../forms/MailchimpGuideForm";
 export const ContactFormContext = React.createContext();
 
 const Contact = () => {
