@@ -9,18 +9,22 @@ import "./Css/animations.css";
 import "./Css/custom-slick-rules.css";
 import { IntercomProvider } from "react-use-intercom";
 import { HashRouter as Router } from "react-router-dom";
+import FBPixel from "./Components/Utilities/FBPixel";
 
 const INTERCOM_APP_ID = "j8w2t672";
 
 function App() {
   return (
-    <Router>
-      <IntercomProvider appId={INTERCOM_APP_ID} autoBoot>
-        <Header />
-        <Main />
-        <Footer />
-      </IntercomProvider>
-    </Router>
+    <>
+      <FBPixel />
+      <Router>
+        <IntercomProvider appId={INTERCOM_APP_ID} autoBoot>
+          <Header />
+          <Main />
+          <Footer />
+        </IntercomProvider>
+      </Router>
+    </>
   );
 }
 
