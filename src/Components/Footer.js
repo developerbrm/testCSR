@@ -53,8 +53,8 @@ const Footer = () => {
               <img src="/assets/icon-mail.png" alt="mail icon" />
             </div>
             <div className="link">
-              <a href="mailto:storezippydigital@gmail.com">
-                storezippydigital@gmail.com
+              <a href="mailto:info@storezippy.com">
+                info@storezippy.com
               </a>
             </div>
           </div>
@@ -102,7 +102,7 @@ const Footer = () => {
 
       <div className="gradient-line"></div>
       <p className="rte txt-center" style={{ margin: "1rem" }}>
-      Copyright © 2020 EMount Ventures Pvt. Ltd. All rights reserved      </p>
+      Copyright © 2021 EMount Ventures Pvt. Ltd. All rights reserved      </p>
     </footer>
   );
 };
