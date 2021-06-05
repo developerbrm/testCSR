@@ -10,10 +10,16 @@ import "./Css/custom-slick-rules.css";
 import { IntercomProvider } from "react-use-intercom";
 import { HashRouter as Router } from "react-router-dom";
 import FBPixel from "./Components/Utilities/FBPixel";
+import { hotjar } from "react-hotjar";
+import ReactGA from 'react-ga';
 
 const INTERCOM_APP_ID = "j8w2t672";
 
 function App() {
+  hotjar.initialize(2438375, 6);
+  ReactGA.initialize('G-LDDTFBHGPL');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <>
       <FBPixel />

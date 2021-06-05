@@ -102,7 +102,7 @@ const Header = () => {
                 <Link
                   onClick={handleLinkClick}
                   className="main-link"
-                  to="/resources"
+                  to="/"
                 >
                   Resources
                 </Link>
