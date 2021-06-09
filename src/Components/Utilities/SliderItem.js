@@ -1,25 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import RenderText from "./mini-comps/RenderText";
 
 function SliderItem({ data }) {
   const { img, textData, index, mobImg } = data;
-
-  const rendertext = (text) => {
-    return (
-      <div className="txt-container">
-        {text.map(({ heading, content, color }, index) => (
-          <div className="txt-item" style={{ color: color }} key={index}>
-            <h3>{heading}</h3>
-            <p>{content}</p>
-          </div>
-        ))}
-
-        <Link className="btn" to="/book-test-ride">
-          Book a Test Ride
-        </Link>
-      </div>
-    );
-  };
 
   return (
     <div className={`slider-item slider-item-${index}`}>
@@ -30,7 +14,7 @@ function SliderItem({ data }) {
         </picture>
       </div>
 
-      {textData && rendertext(textData)}
+      {textData && <RenderText textData={textData} />}
     </div>
   );
 }

@@ -232,6 +232,8 @@ a,
   overflow-x: hidden;
 
   .slider-item {
+    position: relative;
+
     .img-container {
       max-height: 100vh;
 
@@ -244,47 +246,37 @@ a,
     .txt-container {
       position: absolute;
       z-index: 2;
-      bottom: 0;
-      padding: clamp(1rem, 8vw, 6rem);
-      display: inline-grid;
-      justify-content: center;
-      align-items: start;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
+      top: 50%;
+      left: clamp(2rem, 5vw, 5rem);
+      transform: translate(0, -50%);
+      font-family: "Helvetica Rounded";
 
       .txt-item {
-        color: inherit;
-        padding: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-        max-width: 15ch;
-        margin: 0 auto;
+        max-width: 60ch;
 
-        &:first-of-type {
-          margin-right: 0rem;
-          border-right: 1px solid white;
+        & > * {
+          margin-top: 0;
+        }
+
+        .heading {
+          font-size: clamp(1.8rem, 5vw, 3rem);
+
+          @media (max-width: 750px) {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+
+        .content {
+          font-size: clamp(1.5rem, 5vw, 2.5rem);
         }
       }
 
       .btn {
-        grid-column: 1/-1;
-        text-align: center;
-        width: 60%;
         max-width: 15rem;
-        margin: 0 auto;
+        min-width: max-content;
         margin-top: 1rem;
-        background-color: #fff;
-        color: rgb(0, 0, 0);
-
-        &::before {
-          background-color: #000;
-        }
-
-        &:hover,
-        &:focus,
-        &:active {
-          color: #fff;
-        }
+        // font-size: 1rem;
       }
 
       // mobile rules
@@ -293,7 +285,6 @@ a,
         left: 0;
         right: 0;
         width: 100%;
-        margin: 0 auto;
         max-width: 25rem;
         padding: 1rem;
         padding-bottom: 5rem;

@@ -16,7 +16,7 @@ function SliderContainer({ dataForSlider }) {
   };
 
   return (
-    <Slider {...settings} className="slider-container">
+    <Slider {...settings} className="hero-slider-container">
       {dataForSlider.map((data, index) => (
         <SliderItem data={{ ...data, index }} key={index} />
       ))}

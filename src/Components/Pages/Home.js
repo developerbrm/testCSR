@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import HeroSlider from "../Utilities/HeroSlider";
 // import { Link } from "react-router-dom";
 import animationObserver from "../Utilities/library/animationObserver";
 import HeadingWithLine from "../Utilities/mini-comps/HeadingWithLine";
@@ -19,32 +20,22 @@ const Home = () => {
   return (
     <div id="home" title="home">
       {/* hero  */}
-      <section className="hero">
-        <div className="basic-grid-container page-width">
-          <div
-            data-animname="fade-in-up"
-            data-onetime="true"
-            data-delay=".1"
-            className="grid-item grid-item-1"
-          >
-            <div className="content-container width-40ch">
-              <h2 className="primary-color primary-font heading text-with-line">
-                On Demand Warehousing and Fulfillment solution{" "}
-              </h2>
-            </div>
-          </div>
-          <div
-            data-animname="fade-in-up"
-            data-onetime="true"
-            data-delay=".3"
-            className="grid-item grid-item-2"
-          >
-            <div className="img-container">
-              <img src="/assets/pages/home/hero-grid-2.png" alt="image" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSlider
+        data={[
+          {
+            img: "/assets/pages/home/hero-img-1.png",
+            mobImg: "/assets/pages/home/hero-img-mob-1.png",
+            textData: {
+              color: "#fff",
+              heading:
+                "<span style='color: #2CDEF8; margin-right: 1rem' data-animname='fade-in-up'            data-onetime='true' data-delay='.1'>Reliable.</span><span style='color: #FFCA41; margin-right: 1rem' data-animname='fade-in-up'            data-onetime='true' data-delay='.2'>Flexible.</span><span style='color: #FF8F3F; margin-right: 1rem' data-animname='fade-in-up'            data-onetime='true' data-delay='.3'>Scalable.</span>",
+              content: "India’s most cost-effective fulfillment solution",
+              buttonText: "Get Quotes",
+              buttonURL: "/quotes",
+            },
+          },
+        ]}
+      />
 
       {/* quotes  */}
       <section className="quotes">

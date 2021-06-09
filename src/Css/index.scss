@@ -232,7 +232,7 @@ main {
   // overflow-x: hidden;
 
   .hero {
-    padding: 2rem;
+    margin-top: clamp(-2.1rem, 5vh, -8.1rem);
 
     .basic-grid-container {
       justify-content: center;
