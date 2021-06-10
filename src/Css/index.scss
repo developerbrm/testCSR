@@ -224,6 +224,14 @@ main {
     rgba(33, 190, 213, 0.7) -32.85%,
     rgba(255, 255, 255, 0) 81.94%
   );
+}
+
+// for pading top
+#contact,
+#guide,
+#not-found-page,
+#product,
+#quotes {
   padding-top: clamp(2rem, 5vh, 8rem);
 }
 
@@ -232,8 +240,6 @@ main {
   // overflow-x: hidden;
 
   .hero {
-    margin-top: clamp(-2.1rem, 5vh, -8.1rem);
-
     .basic-grid-container {
       justify-content: center;
       max-width: 1400px;

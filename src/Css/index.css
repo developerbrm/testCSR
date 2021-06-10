@@ -279,11 +279,14 @@ header.hide {
 main {
   background: -webkit-gradient(linear, right top, left top, color-stop(-32.85%, rgba(33, 190, 213, 0.7)), color-stop(81.94%, rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, rgba(33, 190, 213, 0.7) -32.85%, rgba(255, 255, 255, 0) 81.94%);
-  padding-top: clamp(2rem, 5vh, 8rem);
 }
 
-#home .hero {
-  margin-top: clamp(-2.1rem, 5vh, -8.1rem);
+#contact,
+#guide,
+#not-found-page,
+#product,
+#quotes {
+  padding-top: clamp(2rem, 5vh, 8rem);
 }
 
 #home .hero .basic-grid-container {
