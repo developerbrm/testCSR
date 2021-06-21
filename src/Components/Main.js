@@ -7,6 +7,7 @@ import Quotes from "./Pages/Quotes";
 import Product from "./Pages/Product";
 import Contact from "./Pages/Contact";
 import Guide from "./Pages/Guide";
+import PrivacyPolicy from "./Pages/polices/PrivacyPolicy";
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
       {/* <ScrollToTop /> */}
 
       <Switch>
+        <Route exact path="/polices/privacy" component={PrivacyPolicy} />
         <Route exact path="/guide" component={Guide} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/product" component={Product} />

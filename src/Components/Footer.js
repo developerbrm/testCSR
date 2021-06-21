@@ -29,6 +29,10 @@ const Footer = () => {
       { text: "Reconcile your payments", to: "/" },
     ],
   };
+  const dataForPolices = {
+    heading: "Polices",
+    linksData: [{ text: "Privacy Policy", to: "/polices/privacy" }],
+  };
 
   return (
     <footer className="txt-center">
@@ -53,9 +57,7 @@ const Footer = () => {
               <img src="/assets/icon-mail.png" alt="mail icon" />
             </div>
             <div className="link">
-              <a href="mailto:info@storezippy.com">
-                info@storezippy.com
-              </a>
+              <a href="mailto:info@storezippy.com">info@storezippy.com</a>
             </div>
           </div>
           {/* <div className="icon-link">
@@ -98,11 +100,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className="grid-item">
+          <FooterLinksGenerator data={dataForPolices} />
+        </div>
       </div>
 
       <div className="gradient-line"></div>
       <p className="rte txt-center" style={{ margin: "1rem" }}>
-      Copyright © 2021 EMount Ventures Pvt. Ltd. All rights reserved      </p>
+        Copyright © 2021 EMount Ventures Pvt. Ltd. All rights reserved{" "}
+      </p>
     </footer>
   );
 };
