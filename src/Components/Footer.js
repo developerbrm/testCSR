@@ -7,31 +7,37 @@ const Footer = () => {
   const dataForCompany = {
     heading: "Company",
     linksData: [
-      { text: "About", to: "/about" },
-      { text: "Jobs", to: "/jobs" },
-      { text: "Customers", to: "/customers" },
-      { text: "Contact US", to: "/contact" },
+      { text: "Why us?", to: "/why" },
+      { text: "Get in Touch", to: "/contact" },
+      { text: "Careers", to: "/careers" },
+      { text: "Fulfillment Centers", to: "/fddsf" },
+      { text: "Technology", to: "/technology" },
     ],
   };
   const dataForExplore = {
-    heading: "Explore",
+    heading: "Product",
     linksData: [
-      { text: "How it works?", to: "/" },
-      { text: "Technology", to: "/" },
-      { text: "Fulfillment Centers", to: "/" },
+      { text: "How it works?", to: "/product" },
+      { text: "Partners and Integrations", to: "/" },
+      { text: "Pricing", to: "/" },
+      { text: "Payment Reconciliation", to: "/" },
     ],
   };
   const dataForBrowse = {
-    heading: "Browse",
+    heading: "Resources",
     linksData: [
-      { text: "Sell your Products", to: "/" },
-      { text: "Fulfill your orders", to: "/" },
-      { text: "Reconcile your payments", to: "/" },
+      { text: "Guides", to: "/guide" },
+      { text: "Case Studies", to: "/" },
+      { text: "Frequently Asked Questions", to: "/" },
+      { text: "Blogs", to: "/" },
     ],
   };
   const dataForPolices = {
-    heading: "Polices",
-    linksData: [{ text: "Privacy Policy", to: "/polices/privacy" }],
+    heading: "Legal",
+    linksData: [
+      { text: "Terms and Conditions", to: "/polices/terms-conditions" },
+      { text: "Privacy Policy", to: "/polices/privacy" },
+  ],
   };
 
   return (
@@ -47,8 +53,7 @@ const Footer = () => {
           <br />
           <div className="rte">
             <address>
-              B68/2-B, 3rd Floor, Nariana Industrial Area Phase-2, New Delhi,
-              Delhi 110028
+              Kharsa no- 72/16 & 25, Swaran Park, Mundka, New Delhi 110041
             </address>
           </div>
           <br />
@@ -60,14 +65,14 @@ const Footer = () => {
               <a href="mailto:info@storezippy.com">info@storezippy.com</a>
             </div>
           </div>
-          {/* <div className="icon-link">
+          <div className="icon-link">
             <div className="icon">
               <img src="/assets/icon-phone.png" alt="phone icon" />
             </div>
             <div className="link">
-              <a href="tel:7838812153">7838812153</a>
+              <a href="tel: 9999332820"> 9999332820</a>
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div className="grid-item">
@@ -80,7 +85,13 @@ const Footer = () => {
 
         <div className="grid-item">
           <FooterLinksGenerator data={dataForBrowse} />
+        </div>
 
+        <div className="grid-item">
+          <FooterLinksGenerator data={dataForPolices} />
+        </div>
+
+        <div className="grid-item">
           <h3 className="heading">Follow us on:</h3>
           <div className="social-icons-container">
             <div className="social-link-item">
@@ -99,10 +110,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="grid-item">
-          <FooterLinksGenerator data={dataForPolices} />
         </div>
       </div>
 
