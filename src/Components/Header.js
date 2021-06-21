@@ -93,9 +93,9 @@ const Header = () => {
                 <Link
                   onClick={handleLinkClick}
                   className="main-link"
-                  to="/integrations"
+                  to="/pricing"
                 >
-                  Integrations
+                  Pricing
                 </Link>
               </li>
               <li>
@@ -111,9 +111,9 @@ const Header = () => {
                 <Link
                   onClick={handleLinkClick}
                   className="main-link"
-                  to="/contact"
+                  to="/integration"
                 >
-                  Contact
+                  Integration
                 </Link>
               </li>
             </ul>

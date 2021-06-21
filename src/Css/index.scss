@@ -871,10 +871,10 @@ footer {
 
   .links-container {
     padding-block: clamp(1rem, 5vw, 2rem);
-    grid-template: 1fr / repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template: 1fr / repeat(auto-fit, minmax(15rem, 1fr));
     padding-inline: 5%;
     gap: 2rem;
-    max-width: 1400px;
+    max-width: 2000px;
     margin: 0 auto;
     text-align: left;
 
