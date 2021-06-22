@@ -1,12 +1,44 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import HamIcon from "./Utilities/mini-comps/HamIcon";
 import { useIntercom } from "react-use-intercom";
+import ReactHtmlParser from "react-html-parser";
 
 const Header = () => {
   const headerRef = useRef(null);
   const hamMenuRef = useRef(null);
+  const dropDownNavRef = useRef(null);
   const { show } = useIntercom();
+
+  const dataForNavDropdown = {
+    resources: {
+      headingText: "Mastering <strong>Ecommerce</strong> with Store Zippy",
+      links: [
+        {
+          icon: "/assets/icon-guide.png",
+          text: "Guides",
+          url: "/guide",
+        },
+        {
+          icon: "/assets/icon-blogging.png",
+          text: "Blogs",
+          url: "/blogs",
+        },
+        {
+          icon: "/assets/icon-case-studies.png",
+          text: "Case Studies",
+          url: "/case-studies",
+        },
+        {
+          icon: "/assets/icon-faq.png",
+          text: "Frequently Asked Questions",
+          url: "/faq",
+        },
+      ],
+    },
+  };
+
+  const [currentDropDown, setCurrentDropDown] = useState(null);
 
   const handleHamClick = (e) => {
     if (!e) return;
@@ -39,13 +71,51 @@ const Header = () => {
     show();
   };
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e) => {
     if (window.innerWidth <= 650) {
       headerRef.current.classList.add("hide");
     }
 
     handleHamClick();
     animateHamIcon();
+    toggleDropDown(e);
+    changeDropdDown(e);
+  };
+
+  const handleDropDownLinkLinkClick = (e) => {
+    toggleDropDown(e);
+    changeDropdDown(e);
+  };
+
+  const handleDropDownLinkMouseEnter = (e) => {
+    changeDropdDown(e);
+    showDropDown();
+  };
+
+  const handleHeaderMouseLeave = (e) => {
+    hideDropDown();
+    changeDropdDown(e);
+  };
+
+  const changeDropdDown = (e) => {
+    const { dropDown } = e.target.dataset;
+    if (!dropDown) {
+      setCurrentDropDown(() => null);
+    }
+
+    setCurrentDropDown(() => dataForNavDropdown[dropDown]);
+  };
+
+  const toggleDropDown = () => {
+    dropDownNavRef.current.classList.toggle("active");
+  };
+
+  const showDropDown = () => {
+    dropDownNavRef.current.classList.add("active");
+  };
+
+  const hideDropDown = () => {
+    dropDownNavRef.current.classList.remove("active");
   };
 
   useEffect(() => {
@@ -66,7 +136,7 @@ const Header = () => {
         <HamIcon data={{ handleHamClick, hamMenuRef }} />
       </div>
 
-      <header ref={headerRef}>
+      <header ref={headerRef} onMouseLeave={handleHeaderMouseLeave}>
         <nav>
           <div className="nav-links-group">
             <Link onClick={handleLinkClick} className="logo-container" to="/">
@@ -99,13 +169,29 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  onClick={handleLinkClick}
-                  className="main-link"
-                  to="/"
+                <div
+                  onMouseEnter={handleDropDownLinkMouseEnter}
+                  onClick={handleDropDownLinkLinkClick}
+                  className="main-link has-drop-down"
                 >
-                  Resources
-                </Link>
+                  <div className="title" data-drop-down="resources">
+                    Resources
+                    <span>
+                      <img src="/assets/chevron-down.svg" />
+                    </span>
+                  </div>
+                  <ul>
+                    {dataForNavDropdown["resources"]["links"]?.map(
+                      ({ text, url }, index) => (
+                        <li className="link-item" key={index}>
+                          <Link onClick={handleLinkClick} to={url}>
+                            {text}
+                          </Link>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
               </li>
               <li>
                 <Link
@@ -138,6 +224,26 @@ const Header = () => {
             </div>
           </div>
         </nav>
+        <aside className="dropdown-nav" ref={dropDownNavRef}>
+          {currentDropDown && (
+            <div className="dropdown-grid-container">
+              <div className="heading-container">
+                <h2>{ReactHtmlParser(currentDropDown["headingText"])}</h2>
+              </div>
+
+              <div className="links-container">
+                {currentDropDown["links"]?.map(({ icon, text, url }, index) => (
+                  <Link className="link-item" key={index} to={url}>
+                    <div className="icon">
+                      <img src={icon} alt={icon} />
+                    </div>
+                    <div className="link">{text}</div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+        </aside>
       </header>
     </>
   );

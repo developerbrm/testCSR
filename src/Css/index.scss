@@ -55,6 +55,7 @@ header {
 
         .main-link {
           width: max-content;
+          cursor: pointer;
         }
       }
     }
@@ -215,6 +216,143 @@ header {
 
   @media (max-width: $mob-nav-breakpoint) {
     display: flex;
+  }
+}
+
+.has-drop-down {
+  overflow: hidden;
+
+  .title {
+    display: flex;
+    // gap: .1rem;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+
+    img {
+      color: currentColor;
+    }
+  }
+
+  ul {
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    transition: 0.3s ease;
+
+    .link-item {
+      color: inherit;
+    }
+
+    @media (min-width: $mob-nav-breakpoint) {
+      display: none;
+    }
+  }
+
+  &:active,
+  &:focus {
+    ul {
+      opacity: 1 !important;
+      pointer-events: all !important;
+      height: revert !important;
+
+      li:first-of-type {
+        margin-top: 1.5rem !important;
+      }
+    }
+  }
+}
+
+// dropdown-nav
+.dropdown-nav {
+  will-change: auto;
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  transition: 0.3s ease;
+  background-color: #fff;
+  color: #ff8f3f;
+  font-family: inherit;
+
+  .dropdown-grid-container {
+    margin: 2rem calc(min(5rem, 10%));
+    padding-block: 2rem;
+    display: grid;
+    align-items: center;
+    grid-template: 1fr/ 1fr 1fr;
+    gap: 1rem;
+
+    .heading-container {
+      position: relative;
+
+      h2 {
+        max-width: 18ch;
+        font-weight: 500;
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+
+        strong {
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -1rem;
+          transform: translate(0, -50%);
+          display: block;
+          height: 110%;
+          background-color: #002559;
+          width: 0.3rem;
+          border-radius: 100px;
+        }
+      }
+    }
+
+    .links-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      grid-auto-rows: auto;
+      gap: 2rem;
+
+      .link-item {
+        display: grid;
+        align-items: center;
+        gap: 1rem;
+        grid-template: auto / auto auto;
+        justify-content: start;
+        align-items: center;
+        color: inherit;
+
+        .icon {
+          width: 3rem;
+
+          img {
+            object-fit: contain;
+          }
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+    height: revert;
+  }
+
+  @media (max-width: $mob-nav-breakpoint) {
+    display: none !important;
   }
 }
 

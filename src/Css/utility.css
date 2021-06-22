@@ -170,7 +170,8 @@ h2 {
 }
 
 a,
-.nav-link-item {
+.nav-link-item,
+.main-link {
   text-decoration: none;
   color: #fff;
   display: inline-block;
@@ -180,7 +181,8 @@ a,
 }
 
 a::after,
-.nav-link-item::after {
+.nav-link-item::after,
+.main-link::after {
   content: "";
   display: inline-block;
   height: 2px;
@@ -196,24 +198,38 @@ a::after,
 }
 
 :is(a.btn,
-.nav-link-item.btn, a.logo-container,
-.nav-link-item.logo-container, a.btn,
-.nav-link-item.btn, a.logo-container,
-.nav-link-item.logo-container)::after {
+.nav-link-item.btn,
+.main-link.btn, a.logo-container,
+.nav-link-item.logo-container,
+.main-link.logo-container, a.btn,
+.nav-link-item.btn,
+.main-link.btn, a.logo-container,
+.nav-link-item.logo-container,
+.main-link.logo-container, a.btn,
+.nav-link-item.btn,
+.main-link.btn, a.logo-container,
+.nav-link-item.logo-container,
+.main-link.logo-container)::after {
   display: none;
 }
 
 a:focus, a:hover, a:active,
 .nav-link-item:focus,
 .nav-link-item:hover,
-.nav-link-item:active {
+.nav-link-item:active,
+.main-link:focus,
+.main-link:hover,
+.main-link:active {
   color: cyan;
 }
 
 a:focus::after, a:hover::after, a:active::after,
 .nav-link-item:focus::after,
 .nav-link-item:hover::after,
-.nav-link-item:active::after {
+.nav-link-item:active::after,
+.main-link:focus::after,
+.main-link:hover::after,
+.main-link:active::after {
   width: 100%;
 }
 
