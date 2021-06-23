@@ -9,7 +9,7 @@ const Blogs = () => {
       img: "/assets/pages/blogs/how-to-start-selling-online/featured-image.png",
       date: "23rd June 2021",
       title: "How to start selling online?",
-      des: "Want to start an online business but don’t know where to start? Learn how to launch an online store and start selling with our ultimate step by step guide.",
+      des: "Want to start an online business but don’t know where to start? Learn how to launch an online store and start selling even if you are a newbie.",
       author: "Garima Mehta",
       url: "/blogs/how-to-start-selling-online",
     },
