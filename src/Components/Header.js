@@ -82,14 +82,14 @@ const Header = () => {
     changeDropdDown(e);
   };
 
-  const handleDropDownLinkLinkClick = (e) => {
+  const handleDropDownLinkClick = (e) => {
     toggleDropDown(e);
     changeDropdDown(e);
   };
 
   const handleDropDownLinkMouseEnter = (e) => {
     changeDropdDown(e);
-    showDropDown();
+    // showDropDown();
   };
 
   const handleHeaderMouseLeave = (e) => {
@@ -99,6 +99,7 @@ const Header = () => {
 
   const changeDropdDown = (e) => {
     const { dropDown } = e.target.dataset;
+
     if (!dropDown) {
       setCurrentDropDown(() => null);
     }
@@ -169,16 +170,27 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <div
+                <button
                   onMouseEnter={handleDropDownLinkMouseEnter}
-                  onClick={handleDropDownLinkLinkClick}
+                  onClick={handleDropDownLinkClick}
                   className="main-link has-drop-down"
                 >
                   <div className="title" data-drop-down="resources">
                     Resources
-                    <span>
-                      <img src="/assets/chevron-down.svg" />
-                    </span>
+                    {/* <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span> */}
                   </div>
                   <ul>
                     {dataForNavDropdown["resources"]["links"]?.map(
@@ -191,7 +203,7 @@ const Header = () => {
                       )
                     )}
                   </ul>
-                </div>
+                </button>
               </li>
               <li>
                 <Link
@@ -233,7 +245,12 @@ const Header = () => {
 
               <div className="links-container">
                 {currentDropDown["links"]?.map(({ icon, text, url }, index) => (
-                  <Link className="link-item" key={index} to={url}>
+                  <Link
+                    className="link-item"
+                    key={index}
+                    to={url}
+                    onClick={handleLinkClick}
+                  >
                     <div className="icon">
                       <img src={icon} alt={icon} />
                     </div>

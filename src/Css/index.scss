@@ -182,6 +182,12 @@ header {
               margin-top: 0;
             }
           }
+
+          .main-link {
+            &::after {
+              display: none;
+            }
+          }
         }
       }
     }
@@ -220,11 +226,11 @@ header {
 }
 
 .has-drop-down {
-  overflow: hidden;
+  font: inherit;
 
   .title {
     display: flex;
-    // gap: .1rem;
+    gap: 0.1rem;
     justify-content: center;
     align-items: center;
     color: inherit;
@@ -241,6 +247,7 @@ header {
     pointer-events: none !important;
     height: 0 !important;
     transition: 0.3s ease;
+    overflow: hidden;
 
     .link-item {
       color: inherit;
@@ -257,6 +264,7 @@ header {
       opacity: 1 !important;
       pointer-events: all !important;
       height: revert !important;
+      overflow: revert;
 
       li:first-of-type {
         margin-top: 1.5rem !important;
@@ -997,6 +1005,114 @@ main {
 
     li {
       list-style: disc;
+    }
+  }
+}
+
+// blogs page
+#blogs-page {
+  padding: 3rem 0;
+
+  .blogs-container {
+    .blog-item {
+      display: grid;
+      padding-inline: 5%;
+      margin-bottom: clamp(5rem, 10vw, 10rem);
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-auto-rows: auto;
+      gap: 2rem;
+      justify-content: center;
+      align-items: stretch;
+
+      .featured-image {
+        a {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .content {
+        font-weight: normal;
+        max-width: 35ch;
+
+        p {
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .date {
+        }
+
+        .title {
+          font-family: "Helvetica Rounded";
+          color: #002862;
+        }
+
+        .des {
+        }
+
+        .custom-hr {
+          background-color: #37d5ec;
+          height: 1px;
+          width: 100%;
+        }
+
+        .author {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// blog-page
+.blog-page {
+  .heading {
+    color: #002862;
+    font-family: "Helvetica Rounded";
+  }
+
+  .author {
+    font-weight: 500;
+  }
+
+  p {
+    margin: revert;
+    line-height: 1.4;
+  }
+
+  ul {
+    padding-left: revert;
+
+    li {
+      list-style: disc;
+    }
+  }
+
+  .has-float-img {
+    img {
+      float: right;
+      width: 50vw;
+      max-width: 500px;
+      margin-left: 2rem;
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+
+  .point {
+    padding-top: 3rem;
+    overflow: hidden;
+
+    &:first-of-type {
+      padding-top: 0;
     }
   }
 }

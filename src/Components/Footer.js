@@ -29,7 +29,7 @@ const Footer = () => {
       { text: "Guides", to: "/guide" },
       { text: "Case Studies", to: "/" },
       { text: "Frequently Asked Questions", to: "/" },
-      { text: "Blogs", to: "/" },
+      { text: "Blogs", to: "/blogs" },
     ],
   };
   const dataForPolices = {
