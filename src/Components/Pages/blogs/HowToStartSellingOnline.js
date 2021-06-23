@@ -2,6 +2,11 @@ import React from "react";
 import ResponsiveDisplayImg from "../../Utilities/mini-comps/ResponsiveDisplayImg";
 
 const HowToStartSellingOnline = () => {
+  // scroll to top
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="blog-page">
       <ResponsiveDisplayImg
@@ -11,12 +16,16 @@ const HowToStartSellingOnline = () => {
       />
 
       <article className="blog-page-width">
+        <br />
         <h1 className="title heading primary-font">
           How to start selling online?
         </h1>
         <p>
           Written by <span className="author">Garima Mehta</span> | 5 mins Read
         </p>
+        <div className="custom-hr"></div>
+        <br />
+        <br />
 
         <p>
           It is needless to say that Covid-19 is still raging through the globe
@@ -102,7 +111,6 @@ const HowToStartSellingOnline = () => {
             supplier to maximise your profits.
           </p>
         </div>
-        
 
         <div className="point has-float-img">
           <img src="/assets/pages/blogs/how-to-start-selling-online/stamp.png" />
@@ -142,11 +150,11 @@ const HowToStartSellingOnline = () => {
           </ul>
         </div>
 
+        <img
+          style={{ paddingTop: "6rem" }}
+          src="/assets/pages/blogs/how-to-start-selling-online/apps.png"
+        />
         <br />
-        <img src="/assets/pages/blogs/how-to-start-selling-online/apps.png" />
-        <br />
-
-        
 
         <div className="point">
           <h2 className="heading">4. Choose the right platform</h2>
@@ -165,7 +173,6 @@ const HowToStartSellingOnline = () => {
             make sure you choose the one best suitable for your business needs.
           </p>
         </div>
-        
 
         <div className="point">
           <h2 className="heading">5. Developing marketing strategies</h2>
@@ -201,13 +208,14 @@ const HowToStartSellingOnline = () => {
             </li>
             <br />
             <br />
-          </ul>
 
-          <p>
-            A little piece of advice - <strong>Never copy</strong>. Create one
-            of your own!
-          </p>
-          <ul>
+            <li style={{ listStyle: "none" }}>
+              A little piece of advice - <strong>Never copy</strong>. Create one
+              of your own!
+            </li>
+            <br />
+            <br />
+
             <li>
               <strong>Clear & Good quality photos -</strong> Don’t get surprised
               by what I'm going to tell you next. “People make their buying
@@ -219,7 +227,6 @@ const HowToStartSellingOnline = () => {
               ecommerce business.
             </li>
             <br />
-
             <br />
 
             <li>
@@ -231,7 +238,6 @@ const HowToStartSellingOnline = () => {
               decisions.
             </li>
             <br />
-
             <br />
 
             <li>
@@ -259,8 +265,8 @@ const HowToStartSellingOnline = () => {
             the competition. Set up your online store and enjoy the freedom of
             being your own boss...Good luck!
           </p>
+          <br />
         </div>
-        
       </article>
     </div>
   );

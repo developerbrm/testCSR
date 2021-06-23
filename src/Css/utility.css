@@ -720,3 +720,9 @@ a:focus::after, a:hover::after, a:active::after,
   margin: 0 auto;
   padding-inline: calc(min(5%, 4rem));
 }
+
+.custom-hr {
+  background-color: #37d5ec;
+  height: 1px;
+  width: 100%;
+}

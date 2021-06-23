@@ -1034,7 +1034,7 @@ main {
 
       .content {
         font-weight: normal;
-        max-width: 35ch;
+        // max-width: 35ch;
 
         p {
           margin-top: 0.5rem;
@@ -1052,12 +1052,6 @@ main {
         .des {
         }
 
-        .custom-hr {
-          background-color: #37d5ec;
-          height: 1px;
-          width: 100%;
-        }
-
         .author {
           span {
             font-weight: 600;
@@ -1067,6 +1061,15 @@ main {
 
       &:last-of-type {
         margin-bottom: 0;
+      }
+
+      // mobile rules
+      @media (max-width: $mob-nav-breakpoint) {
+        gap: 0rem;
+
+        .content {
+          padding-inline: 5%;
+        }
       }
     }
   }

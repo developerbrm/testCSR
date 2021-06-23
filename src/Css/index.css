@@ -1136,7 +1136,6 @@ main {
 
 #blogs-page .blogs-container .blog-item .content {
   font-weight: normal;
-  max-width: 35ch;
 }
 
 #blogs-page .blogs-container .blog-item .content p {
@@ -1149,18 +1148,21 @@ main {
   color: #002862;
 }
 
-#blogs-page .blogs-container .blog-item .content .custom-hr {
-  background-color: #37d5ec;
-  height: 1px;
-  width: 100%;
-}
-
 #blogs-page .blogs-container .blog-item .content .author span {
   font-weight: 600;
 }
 
 #blogs-page .blogs-container .blog-item:last-of-type {
   margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  #blogs-page .blogs-container .blog-item {
+    gap: 0rem;
+  }
+  #blogs-page .blogs-container .blog-item .content {
+    padding-inline: 5%;
+  }
 }
 
 .blog-page .heading {
