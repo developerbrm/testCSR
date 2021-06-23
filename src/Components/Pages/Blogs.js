@@ -33,7 +33,9 @@ const Blogs = () => {
 
             <div className="content">
               <p className="date">{date}</p>
-              <p className="title primary-font">{title}</p>
+              <Link to={url}>
+                <p className="title primary-font">{title}</p>
+              </Link>
               <p className="des">{des}</p>
               <div className="custom-hr"></div>
               <p className="author">

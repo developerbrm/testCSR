@@ -1024,7 +1024,8 @@ main {
       justify-content: center;
       align-items: stretch;
 
-      .featured-image {
+      .featured-image,
+      .content {
         a {
           &::after {
             display: none;
