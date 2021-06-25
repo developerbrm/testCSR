@@ -10,6 +10,7 @@ import Guide from "./Pages/Guide";
 import PrivacyPolicy from "./Pages/polices/PrivacyPolicy";
 import Blogs from "./Pages/Blogs";
 import HowToStartSellingOnline from "./Pages/blogs/HowToStartSellingOnline";
+import About from "./Pages/About";
 
 const Main = () => {
   return (
@@ -29,6 +30,7 @@ const Main = () => {
         <Route exact path="/product" component={Product} />
         <Route exact path="/quotes" component={Quotes} />
         <Route exact path="/home" component={Home} />
+        <Route exact path="/about" component={About} />
         <Route exact path="/" component={Home} />
         <Route path="*" component={NotFoundPage} />
       </Switch>

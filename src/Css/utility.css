@@ -286,8 +286,10 @@ a:focus::after, a:hover::after, a:active::after,
   border-bottom: 2px solid #000;
 }
 
-.txt-center {
+.txt-center,
+.text-center {
   text-align: center !important;
+  margin-inline: auto !important;
 }
 
 .page-width {
@@ -725,4 +727,35 @@ a:focus::after, a:hover::after, a:active::after,
   background-color: #37d5ec;
   height: 1px;
   width: 100%;
+}
+
+.heading-rounded {
+  font-family: "Helvetica Rounded";
+}
+
+.offset-heading {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 4rem;
+}
+
+.offset-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 60%;
+  bottom: -1.2rem;
+  background-color: #ff8f3f;
+  border-radius: 10px;
+  height: 1rem;
+  width: 15rem;
+}
+
+@media (max-width: 900px) {
+  .offset-heading::after {
+    max-width: 60%;
+    left: 40%;
+  }
 }

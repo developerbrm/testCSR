@@ -1296,3 +1296,89 @@ footer .social-icons-container .social-link-item img {
   height: 2.2rem;
   width: 2.2rem;
 }
+
+#page-about-us {
+  background-color: #001635;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+#page-about-us > *:not(.hero) {
+  width: calc(min(1400px, 85vw));
+  margin-inline: auto;
+}
+
+#page-about-us h1 {
+  font-weight: 700;
+  max-width: 35ch;
+}
+
+#page-about-us > div {
+  margin-block: clamp(3rem, 10vw, 5rem);
+}
+
+#page-about-us > div:first-of-type, #page-about-us > div:last-of-type {
+  margin-block: revert;
+}
+
+#page-about-us > div:last-of-type {
+  padding-bottom: clamp(3rem, 10vw, 5rem);
+}
+
+#page-about-us .story {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: auto 1fr;
+      grid-template: 1fr / auto 1fr;
+}
+
+#page-about-us .story .content {
+  max-width: 50ch;
+}
+
+#page-about-us .story .content h1 {
+  margin-top: 0;
+}
+
+#page-about-us .story .content p {
+  margin: 0;
+}
+
+#page-about-us .story .img-container {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  #page-about-us .story {
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template: auto auto/ 1fr;
+  }
+  #page-about-us .story .content {
+    max-width: 100%;
+  }
+}
+
+#page-about-us .founders .basic-grid-container {
+  gap: 3rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+  #page-about-us .founders .basic-grid-container {
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template: auto auto/ 1fr;
+  }
+  #page-about-us .founders .basic-grid-container .person {
+    max-width: 15rem;
+    margin-inline: auto;
+  }
+}

@@ -213,8 +213,10 @@ a,
   border-bottom: 2px solid #000;
 }
 
-.txt-center {
+.txt-center,
+.text-center {
   text-align: center !important;
+  margin-inline: auto !important;
 }
 
 .page-width {
@@ -614,4 +616,32 @@ a,
   background-color: #37d5ec;
   height: 1px;
   width: 100%;
+}
+
+.heading-rounded {
+  font-family: "Helvetica Rounded";
+}
+
+.offset-heading {
+  position: relative;
+  width: max-content;
+  margin-bottom: 4rem;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 60%;
+    bottom: -1.2rem;
+    background-color: #ff8f3f;
+    border-radius: 10px;
+    height: 1rem;
+    width: 15rem;
+
+    // mobile rules
+    @media (max-width: $mob-nav-breakpoint) {
+      max-width: 60%;
+      left: 40%;
+    }
+  }
 }
