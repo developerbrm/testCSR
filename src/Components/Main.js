@@ -30,7 +30,7 @@ const Main = () => {
         <Route exact path="/product" component={Product} />
         <Route exact path="/quotes" component={Quotes} />
         <Route exact path="/home" component={Home} />
-        <Route exact path="/about" component={About} />
+        <Route exact path="/why-us" component={About} />
         <Route exact path="/" component={Home} />
         <Route path="*" component={NotFoundPage} />
       </Switch>

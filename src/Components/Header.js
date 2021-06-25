@@ -147,7 +147,7 @@ const Header = () => {
           <div className="nav-links-group">
             <ul className="main-links-container">
               <li>
-                <Link onClick={handleLinkClick} className="main-link" to="/about">
+                <Link onClick={handleLinkClick} className="main-link" to="/why-us">
                   Why Us ?
                 </Link>
               </li>
