@@ -68,8 +68,8 @@ const About = () => {
 
         <p>
           The first real stepping stone towards the inception of{" "}
-          <strong>“StoreZippy” </strong>
-          was <strong>“SocioMonkey”</strong>. SocioMonkey is a team of digital
+          <strong>“Store Zippy” </strong>
+          was <strong>“Socio Monkey”</strong>. SocioMonkey is a team of digital
           mixologists using technology, strategy, innovation and human
           brilliance to help build digital presence for not just ecommerce
           ventures but businesses of all types and sizes.
