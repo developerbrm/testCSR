@@ -1323,7 +1323,7 @@ footer .social-icons-container .social-link-item img {
 }
 
 #page-about-us > div:last-of-type {
-  padding-bottom: clamp(3rem, 10vw, 5rem);
+  padding-bottom: 2rem;
 }
 
 #page-about-us .story {
@@ -1334,12 +1334,13 @@ footer .social-icons-container .social-link-item img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-grid-rows: 1fr;
-  -ms-grid-columns: auto 1fr;
-      grid-template: 1fr / auto 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr / 1fr 1fr;
+  max-width: revert;
 }
 
 #page-about-us .story .content {
-  max-width: 50ch;
+  max-width: 55ch;
 }
 
 #page-about-us .story .content h1 {
@@ -1371,6 +1372,11 @@ footer .social-icons-container .social-link-item img {
   margin-inline: auto;
 }
 
+#page-about-us .founders .basic-grid-container .person {
+  max-width: 20rem;
+  margin-inline: auto;
+}
+
 @media (max-width: 900px) {
   #page-about-us .founders .basic-grid-container {
     -ms-grid-rows: auto auto;
@@ -1379,6 +1385,5 @@ footer .social-icons-container .social-link-item img {
   }
   #page-about-us .founders .basic-grid-container .person {
     max-width: 15rem;
-    margin-inline: auto;
   }
 }

@@ -68,16 +68,16 @@ const About = () => {
 
         <p>
           The first real stepping stone towards the inception of{" "}
-          <strong>“StoreZippy”</strong>
+          <strong>“StoreZippy” </strong>
           was <strong>“SocioMonkey”</strong>. SocioMonkey is a team of digital
           mixologists using technology, strategy, innovation and human
           brilliance to help build digital presence for not just ecommerce
           ventures but businesses of all types and sizes.
           <br />
           <br />
-          It was founded by Mr. Neeraj Kathuria and{" "}
+          It was founded by<strong> Mr. Neeraj Kathuria</strong> and{" "}
           <strong>Mr. Vinay Aggarwal</strong> back in
-          <strong>2015</strong> during the early wave of ecommerce in India and
+          <strong> 2015</strong> during the early wave of ecommerce in India and
           we have come a long way since then. Warehousing and fulfillment has
           always been a part of what we do and to accommodate the company’s
           growing client base, the founders decided to create a separate

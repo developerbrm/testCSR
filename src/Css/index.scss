@@ -1227,17 +1227,18 @@ footer {
     }
 
     &:last-of-type {
-      padding-bottom: clamp(3rem, 10vw, 5rem);
+      padding-bottom: 2rem;
     }
   }
 
   .story {
     align-items: stretch;
     justify-content: space-between;
-    grid-template: 1fr / auto 1fr;
+    grid-template: 1fr / 1fr 1fr;
+    max-width: revert;
 
     .content {
-      max-width: 50ch;
+      max-width: 55ch;
 
       h1 {
         margin-top: 0;
@@ -1266,16 +1267,19 @@ footer {
     .basic-grid-container {
       // mobile rules
       gap: 3rem;
-
       max-width: 1000px;
       margin-inline: auto;
+
+      .person {
+        max-width: 20rem;
+        margin-inline: auto;
+      }
 
       @media (max-width: $mob-nav-breakpoint) {
         grid-template: auto auto/ 1fr;
 
         .person {
           max-width: 15rem;
-          margin-inline: auto;
         }
       }
     }
