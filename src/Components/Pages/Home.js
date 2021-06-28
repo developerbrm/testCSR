@@ -23,8 +23,8 @@ const Home = () => {
       <HeroSlider
         data={[
           {
-            img: "/assets/pages/home/hero-img-1.png",
-            mobImg: "/assets/pages/home/hero-img-mob-1.png",
+            img: "/assets/pages/home/hero-img-1-min.png",
+            mobImg: "/assets/pages/home/hero-img-mob-1-min.png",
             textData: {
               color: "#fff",
               heading:
@@ -77,7 +77,7 @@ const Home = () => {
             className="grid-item grid-item-2"
           >
             <div className="img-container">
-              <img src="/assets/pages/home/forklift-vector.png" alt="image" />
+              <img src="/assets/pages/home/forklift-vector-min.png" alt="image" />
             </div>
           </div>
         </div>
@@ -87,8 +87,8 @@ const Home = () => {
       <section className="info-img-conatiner">
         <ResponsiveDisplayImg
           data={{
-            img: "/assets/pages/home/info-img.png",
-            mobImg: "/assets/pages/home/info-img.png",
+            img: "/assets/pages/home/info-img-min.png",
+            mobImg: "/assets/pages/home/info-img-min.png",
           }}
         />
       </section>
@@ -133,8 +133,8 @@ const Home = () => {
 
         <ResponsiveDisplayImg
           data={{
-            img: "/assets/pages/home/procedure.png",
-            mobImg: "/assets/pages/home/procedure-mob.png",
+            img: "/assets/pages/home/procedure-min.png",
+            mobImg: "/assets/pages/home/procedure-mob-min.png",
           }}
         />
       </section>
@@ -197,7 +197,7 @@ const Home = () => {
           <div className="img-container">
             <ResponsiveDisplayImg
               data={{
-                img: "/assets/pages/home/man-on-laptop.png",
+                img: "/assets/pages/home/man-on-laptop-min.png",
               }}
             />
           </div>
@@ -209,7 +209,7 @@ const Home = () => {
       <div className="displayImg-container page-width">
         <ResponsiveDisplayImg
           data={{
-            img: "/assets/pages/home/ui-dashboard.png",
+            img: "/assets/pages/home/ui-dashboard-min.png",
           }}
         />
         <div className="btn-container" style={{ textAlign: "center" }}>
@@ -227,7 +227,7 @@ const Home = () => {
         <div className="basic-grid-container">
           <ResponsiveDisplayImg
             data={{
-              img: "/assets/pages/home/warehouse.png",
+              img: "/assets/pages/home/warehouse-min.png",
             }}
           />
 
@@ -274,7 +274,7 @@ const Home = () => {
 
           <ResponsiveDisplayImg
             data={{
-              img: "/assets/pages/home/forklift-vector.png",
+              img: "/assets/pages/home/forklift-vector-min.png",
             }}
           />
         </div>
@@ -295,7 +295,7 @@ const Home = () => {
 
         <ResponsiveDisplayImg
           data={{
-            img: "/assets/pages/home/logo-stripe.png",
+            img: "/assets/pages/home/logo-stripe-min.png",
           }}
         />
       </section>
@@ -325,7 +325,7 @@ const Home = () => {
 
           <ResponsiveDisplayImg
             data={{
-              img: "/assets/pages/home/quotes.png",
+              img: "/assets/pages/home/quotes-min.png",
             }}
           />
         </div>
