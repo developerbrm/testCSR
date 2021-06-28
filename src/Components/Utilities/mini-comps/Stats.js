@@ -10,7 +10,7 @@ const Stats = () => {
       <br />
       <ResponsiveDisplayImg
         data={{
-          img: "/assets/pages/home/stats.png",
+          img: "/assets/pages/home/stats-min.png",
         }}
       />
     </section>
