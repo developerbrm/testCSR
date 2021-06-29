@@ -8,7 +8,7 @@ import "./Css/utility.css";
 import "./Css/animations.css";
 import "./Css/custom-slick-rules.css";
 import { IntercomProvider } from "react-use-intercom";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import FBPixel from "./Components/Utilities/FBPixel";
 import { hotjar } from "react-hotjar";
 import ReactGA from 'react-ga';
